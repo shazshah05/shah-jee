@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belleville-Dental-Care</title>
+    <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/fontawesome.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="./bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+    <style>
+       .body {
+            font-size: 1.4rem;
+            padding-left: 2%;
+            padding-right: 5%;
+        }
+
+        .treatment {
+            width: 800px;
+            margin: auto;
+        }
+
+        h1 {
+            margin-top: 20px;
+            
+            color: #1c6889;
+        }
+
+        h2 {
+            margin-top: 20px;
+            color: #e88b21;
+        }
+
+        b {
+            font-size: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 15px;
+        }
+
+        .types-container {
+            display: flex;
+            justify-content: space-between;
+align-items: center;
+            width: 80%;
+            margin-bottom: 20px;
+        }
+
+        .types-item1 {
+            width: 58%;
+        }
+
+        .types-item2 {
+            width: 38%;
+        }
+
+        @media screen and (min-width:1px) and (max-width:1000px) {
+    .body{
+        width: 98%;
+        font-size: 1.2rem;
+    }
+    .types-container{
+        display: block;
+        width: 95%;
+    }
+    .types-item1{
+        display: block;
+        width: 100%;
+    }
+    .types-item2{
+        display: block;
+        width: 100%;
+    }
+    .treatment{
+        width: 95%;
+    }
+    body{
+        margin: 0%;
+        padding: 0%;
+    }
+}
+
+@media screen and (min-width:1001px) and  (max-width:1200px){
+    .types-container{
+width: 100%;
+    }
+    .types-item1{
+        width: 45%;
+    }
+    .types-item2{
+        width: 50%;
+    }
+    body{
+        margin: 0%;
+        padding: 0%;
+    }
+}
+
+    </style>
+
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="./mobile-crop-logo-removebg-preview.png" alt="" width="200px"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="padding: 0%; margin-right: 40px;"><i class="bi bi-list" style="font-size: 45px;" ></i>
+      <!-- <span class="navbar-toggler-icon" ></span> -->
+    </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class=" nav-link animate__animated animate__fadeInLeftBig" style="animation-delay: 0s;" aria-current="page" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link active dropdown-toggle animate__animated animate__fadeInLeftBig" style="animation-delay: 0.2s;" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Root canal
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="./teethwhitening.html">Teeth whitening</a></li>
+              <li><a class="dropdown-item" href="./dental implant.html">Dental Implants</a></li>
+              <li><a class="dropdown-item" href="./dentures.html">Dentures</a></li>
+              <li><a class="dropdown-item" href="./scaling.html">Scaling</a></li>
+
+              <li><a class="dropdown-item" href="./aligners.html">Aligners</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle animate__animated animate__fadeInLeftBig" style="animation-delay: 0.4s;" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Patient education
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="./dentalproblems.html">Dental problems</a></li>
+              <li><a class="dropdown-item" href="./research.html">Research & advancement</a></li>
+              <li><a class="dropdown-item" href="./products.html">Dental products</a></li>
+            </ul>
+          </li>
+
+
+
+         
+          <li class="nav-item">
+            <a class="nav-link animate__animated animate__fadeInLeftBig" style="animation-delay: 0.6s;" href="about.html">About us</a>
+          </li>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link animate__animated animate__fadeInLeftBig" style="animation-delay: 0.8s;" href="contact.html">Contact us</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+
+ <a href="./contact.html" class="btn btn-danger booking-advertising">Book an appointment</a>
+
+
+
+ 
+ <div class="body">
+    <h1 class="animate__animated animate__fadeInDown">What is a root canal?</h1>
+    <div class="types-container">
+        <div class="types-item1">
+            <p>A root canal (endodontic therapy) is a dental treatment for infections in tooth pulp, the innermost layer
+                of
+                your teeth.
+                Often, you can avoid needing a root canal by taking care of your teeth.</p>
+            <p>Root canal treatment is needed when dental X-rays show that the pulp has been damaged by a bacterial
+                infection. The pulp may become inflamed if it's infected by bacteria, allowing the bacteria to multiply
+                and spread. The symptoms of a pulp infection include: pain when eating or drinking hot or cold food and
+                drink.</p>
+
+        </div>
+        <div class="types-item2 animate__animated animate__fadeIn">
+            <img src="./infected-tooth-root-canal-therapy.jpg" alt="" height="" width="100%">
+        </div>
+
+    </div>
+
+    <iframe width="" height="" src="https://www.youtube.com/embed/0s35QCFg7p0?si=CkRuA1Nyz8vLfevM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+    <div class="treatment">
+        <h2>Why would I need a root canal?</h2>
+        <p>You may need a root canal if bacteria inside your mouth invade the pulp inside your tooth and cause
+            inflammation (pulpitis). Your tooth pulp may come under bacterial attack if:</p>
+        <ul>
+            <li>You have a deep cavity that needs treatment.</li>
+            <li>You have a cracked or damaged tooth, and bacteria from plaque infects your tooth pulp.</li>
+        </ul>
+        <h2>What are signs I may need a root canal?</h2>
+        <p>If you have an infected tooth, you may need root canal treatment to clear out the infection. You can have
+            infected teeth without symptoms. When you have symptoms, they may include:</p>
+        <ul>
+            <li><b>Tooth pain that doesn’t go away. </b> Lots of things make your teeth hurt. But pain that’s deep in a
+                tooth or that spreads to your jaw, face or other teeth may mean you have an infection.</li>
+            <li><b>Pressure hurts.</b>If your tooth hurts when you eat or touch it, it may mean something damaged the
+                nerves around your tooth pulp.</li>
+            <li><b>Swollen gums</b>If you have an infected tooth, your gums may swell or feel tender.</li>
+            <li><b>Pimple on your gums</b> Infected teeth can create pimples or boils on your gums that ooze smelly pus.
+            </li>
+            <li><b>Swollen jaw.</b>Your jaw may swell from pus that doesn’t drain away from your infected tooth.</li>
+            <li><b>Discolored tooth.</b>Tooth pulp infection keeps blood from getting to your tooth. That makes your
+                tooth turn dark.</li>
+            <li><b>Loose tooth.</b>Pus from infected tooth pulp can soften the bones supporting your tooth, making your
+                tooth feel loose.</li>
+        </ul>
+        <h2>What happens during root canals?</h2>
+        <p>Before beginning treatment, your dentist or endodontist will take dental X-rays of the affected tooth. They
+            may do other tests to determine if your tooth pulp is dead, infected or inflamed and confirm that you’ll
+            need a root canal. They may:</p>
+        <ul>
+            <li>Gently tap on your tooth or touch it with a cold or hot substance to check for sensitivity or
+                discomfort.</li>
+            <li>Do an electric pulp test (EPT) by using a device that sends a gradually increasing electric current
+                through your tooth to see if your tooth pulp reacts.</li>
+            <li>Check for signs of swelling in the gums and bone around your tooth.</li>
+            <li>Ask if it hurts when you bite down on your tooth.</li>
+        </ul>
+        <p>During root canal treatment, your dentist or endodontist removes the inflamed pulp. Then they clean and
+            disinfect the inside of your tooth and place a filling on your tooth to seal the space.</p>
+        <h2>Root canal treatment steps</h2>
+        <ol>
+            <li>Your provider injects anesthesia to numb your infected tooth and nearby gum. If you have dental anxiety,
+                your provider may give you medications to help you relax. The medication may make you feel drowsy, which
+                means you won’t be able to drive right after your treatment.</li>
+            <li>Next, your provider places a thin, flexible piece of rubber over your infected tooth and nearby gums.
+                This is a dental dam that keeps your tooth dry during treatment.</li>
+            <li>They drill a tiny hole in your tooth’s crown so they can get to your tooth pulp.</li>
+            <li>Then, they use tiny dental instruments to remove nerves, blood vessels and tissues inside your tooth
+                pulp.</li>
+            <li>After clearing out pulp, your provider cleans and disinfects your pulp chamber and root canals.</li>
+            <li>Next, they fill the empty pulp chamber and root canals with a flexible, rubbery dental material called
+                gutta-percha.</li>
+            <li>Your provider then seals your tooth with a temporary dental filling. The seal keeps bacteria from
+                getting into your tooth.</li>
+            <li>In the last step, your provider places a dental crown on your treated tooth. Dental crowns protect your
+                teeth and restore your bite — the way your teeth fit together when you bite down. Dental crowns are
+                typically made to order, so it may be two or three weeks before this last step happens.</li>
+        </ol>
+        <h2>What happens after a root canal?</h2>
+        <p>Your provider may suggest you rest for a few minutes before leaving the dental clinic or provider’s office.
+            It can take an hour or more for anesthesia to wear off, meaning your mouth and gums aren’t numb anymore.
+            Some people decide to rest at home while that happens while others choose to go on with their usual daily
+            routine.</p>
+        <p>Typically, you’ll have two more appointments so a provider can prepare your tooth for a dental crown and then
+            place the crown on your tooth.</p>
+        <h2>What are the risks or complications of root canals?</h2>
+        <p>Sometimes root canals fail because they weren’t the right solution for your tooth infection. For example, if
+            your tooth is very damaged, a root canal may not solve your issues. If your root canal fails, your
+            healthcare provider will discuss other options:</p>
+        <ul>
+            <li>Re-treating your infected tooth by doing another root canal.</li>
+            <li>Removing (extracting) your infected tooth and replacing it with a dental implant or dental bridge.</li>
+        </ul>
+        <h2>How can you avoid a root canal?</h2>
+        <p>Practicing good oral hygiene and having regular dental checkups are the best ways to avoid root canal
+            treatment. Brushing and flossing your teeth gets rid of dental plaque — a sticky film of bacteria that can
+            cause cavities. Regular dental checkups mean your dentist can spot cavities and other issues early on before
+            they affect your tooth pulp.</p>
+        <h2>What happens if you delay root canal treatment?</h2>
+        <p>Putting off root canal treatment increases the chance that:</p>
+        <ul>
+            <li>You’ll lose your infected tooth.</li>
+            <li>The infection in your tooth pulp will spread to other teeth.</li>
+            <li>The infection will spread to your jawbone.</li>
+        </ul>
+        <h2>Do root canals hurt?</h2>
+        <p>Root canal treatment can be uncomfortable, mostly when your provider injects anesthesia into your gums and
+            other parts of your mouth. Your provider wants you to be relaxed during treatment, so never hesitate to let
+            them know if something hurts.</p>
+        <p>If you’re like most people, you’ll have less pain after treatment because it eliminated the infection that
+            made your tooth hurt. Your tooth may feel sensitive for the first few days after treatment. That said,
+            contact your provider right away if you have throbbing pain. Throbbing pain may mean there’s still infected
+            pulp in your tooth.</p>
+            <div class=" text-center"><a href="./contact.html" class="btn btn-danger">Book an appointment</a></div>
+    </div>
+</div>
+
+
+
+
+
+  <!-- Footer -->
+  <footer class="text-center text-lg-start mt-5 " >
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block ">
+        <span class="fs-4 ">Get connected with us on social networks:</span>
+      </div>
+      <!-- Left -->
+
+      <!-- Right -->
+      <div>
+        <a href="https://www.facebook.com/people/Belleville-Dental-Care/100063752242326/" class="me-4 text-reset">
+          <i class="bi bi-facebook"></i>
+        </a>
+        <a href="https://twitter.com/blvldentalcare" class="me-4 text-reset">
+          <i class="bi bi-twitter"></i>
+        </a>
+        <a href="https://youtube.com/@bellevilledental6238?si=HCi8TJewUEh0ATSs" class="me-4 text-reset">
+          <i class="bi bi-youtube"></i>
+        </a>
+        <a href="https://www.instagram.com/bellevilledentalcare/" class="me-4 text-reset">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/company/belleville-dental-care/?originalSubdomain=ca" class="me-4 text-reset">
+          <i class="bi bi-linkedin"></i>
+        </a>
+
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4 text-center">
+              <img src="./mobile-crop-logo-removebg-preview.png" alt="" width="250rem">
+            </h6>
+            <p>
+              Belleville Dental clinic focuses on patient education to prevent disease and provide different treatment
+              options
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h3 class="text-uppercase fw-bold mb-4">
+              Useful links
+            </h3>
+            <p class="address-link">
+              <a href="./about.html" class="text-reset text-decoration-none">About us</a>
+            </p>
+            <p class="address-link">
+              <a href="contact.html" class="text-reset text-decoration-none">Contact us</a>
+            </p>
+            <p class="address-link">
+              <a href="./dentalproblems.html" class="text-reset text-decoration-none">Dental problems</a>
+            </p>
+            <p>
+              <a href="./contact.html" class="btn btn-danger">Get appointment</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 width-timings">
+            <!-- Links -->
+            <h3 class="text-uppercase fw-bold mb-4">
+              Clinic Timings
+            </h3>
+            <p class="text-reset">Monday: 12pm to 9pm</a>
+            </p>
+            <p class="text-reset">Tuesday: 12pm to 9pm</a>
+            </p>
+            <p class="text-reset">Wednesday: 12pm to 9pm</a>
+            </p>
+            <p class="text-reset">Thursday: 12pm to 9pm</a>
+            </p>
+            <p class="text-reset">Friday: 4pm to 9pm</a>
+            </p>
+            <p class="text-reset">Saturday: 12pm to 9pm</a>
+            </p>
+            <p class="text-reset">Sunday: Off</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h3 class="text-uppercase fw-bold mb-4">Queries</h3>
+            <p class="address-link "> 
+              <a href="https://maps.app.goo.gl/D7GeryVNwbbqEcbW7" class="text-decoration-none text-reset"> <i class="fas fa-home me-3"></i>13 Shop No.7, Yousuf Arcade SC-13 Block "L" North Nazimabad Karachi, SC,
+              Karachi, Pakistan</a>
+            </p>
+            <p class="address-link">
+              <a href="mailto:bellville dental" class="text-decoration-none text-reset ">
+                <i class="fas fa-envelope me-3"></i>
+                askbelleviledental@gmail.com</a>
+            </p>
+            <p><i class="fas fa-phone me-3"></i> +92 3151095674</p>
+            <p><i class="fas fa-print me-3"></i> + 021 234 567 89</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      Copyright©2024 ownwards all rights reserved
+    
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+
+
+</body>
+
+</html>

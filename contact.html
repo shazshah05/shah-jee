@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Belleville-Dental-Care</title>
+  <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/fontawesome.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <script src="./bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+  <style>
+    .body {
+      font-size: 1.4rem;
+      padding-left: 2%;
+      padding-right: 5%;
+      width: 57%;
+      margin: auto;
+    }
+
+    .form-control,
+    .form-select {
+      height: 45px;
+      font-size: 1.1rem;
+    }
+    .form-label{
+      text-align: left;
+    }
+
+    .contact-banner {
+      margin-top: 126px;
+      background-color: #e88b21;
+      padding-top: 180px;
+      padding-bottom: 180px;
+      animation-name: backcolor;
+      animation-duration: 1.2s;
+      animation-timing-function: ease-in-out;
+      animation-direction: alternate;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes backcolor {
+      from {
+        background-color: #e88b21;
+      }
+
+      to {
+        background-color: #1c6889;
+      }
+    }
+
+    .contact-banner p {
+      font-size: 3em;
+      color: white;
+      font-weight: bold;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      color: #1c6889;
+    }
+
+    @media screen and (max-width:1000px) and (min-width:1px) {
+      .body {
+        width: 100%;
+        text-align: center;
+
+      }
+      .align-left{
+      text-align: left;
+    }
+    
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="./mobile-crop-logo-removebg-preview.png" alt="" width="200px"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="padding: 0%; margin-right: 40px;"><i class="bi bi-list" style="font-size: 45px;" ></i>
+      <!-- <span class="navbar-toggler-icon" ></span> -->
+    </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class=" nav-link animate__animated animate__fadeInLeftBig" style="animation-delay: 0s;" aria-current="page" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle animate__animated animate__fadeInLeftBig" style="animation-delay: 0.2s;" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="./teethwhitening.html">Teeth whitening</a></li>
+              <li><a class="dropdown-item" href="./dental implant.html">Dental Implants</a></li>
+              <li><a class="dropdown-item" href="./dentures.html">Dentures</a></li>
+              <li><a class="dropdown-item" href="./rootcanaltreatment.html">Root Canal</a></li>
+              <li><a class="dropdown-item" href="./scaling.html">Scaling</a></li>
+
+              <li><a class="dropdown-item" href="./aligners.html">Aligners</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle animate__animated animate__fadeInLeftBig" style="animation-delay: 0.4s;" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Patient education
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="./dentalproblems.html">Dental problems</a></li>
+              <li><a class="dropdown-item" href="./research.html">Research & advancement</a></li>
+              <li><a class="dropdown-item" href="./products.html">Dental products</a></li>
+            </ul>
+          </li>
+
+
+
+         
+          <li class="nav-item">
+            <a class="nav-link animate__animated animate__fadeInLeftBig" style="animation-delay: 0.6s;" href="about.html">About us</a>
+          </li>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active animate__animated animate__fadeInLeftBig" style="animation-delay: 0.8s;" href="contact.html">Contact us</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+  <a href="./contact.html" class="btn btn-danger booking-advertising">Book an appointment</a>
+
+  <div class="contact-banner">
+    <p>request an appointment</p>
+  </div>
+
+  <!-- form -->
+
+  <div class="body">
+    <h1>Enter your details</h1>
+    <p class="w-md-50">You can contact us any way that is convenient for you. We are available 24/7 email. You can also
+      use a quick contact form below or visit our medical center personally.</p>
+    <p>We would be happy to answer your queries.</p><br>
+
+
+
+    <form class="row g-3 needs-validation" novalidate>
+      <div class="col-md-6 align-left">
+        <label for="inputtext" class="form-label">First name</label>
+        <input type="text" class="form-control" id="inputtext" required>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+    
+      </div>
+      <div class="col-md-6 align-left">
+        <label for="inputtext1" class="form-label">Last name</label>
+        <input type="text" class="form-control" id="inputtext1">
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+      <div class="col-12 align-left">
+        <label for="inputEmail4" class="form-label">Email</label>
+        <input type="email" class="form-control" id="inputEmail4">
+        <div class="invalid-feedback">
+          Please enter your correct email
+        </div>
+      </div>
+      <div class="col-12 align-left">
+        <label for="inputdate" class="form-label">Your appointment date</label>
+        <input type="date" class="form-control" id="date-pick">
+      </div>
+
+      
+      </script>
+      <div class="col-12 align-left">
+        <label for="inputnumber" class="form-label">Contact no.</label>
+        <input type="tel" class="form-control" id="inputnumber" pattern="[0-9]{11}">
+      </div>
+
+      <label for="patient" class="form-label mb-0">New or Existing patient</label>
+      <select class="form-select mt-1" aria-label="Default select example" id="patient">
+        <option selected>New patient</option>
+        <option>Existing patient</option>
+
+      </select>
+
+
+      <label for="patient" class="form-label mb-0">How did you hear about us?</label>
+      <select class="form-select mt-1" aria-label="Default select example" id="patient">
+        <option selected>Select an option</option>
+        <option>Online</option>
+        <option>Google Ads</option>
+        <option>Instagram/Facebook</option>
+        <option>Referral</option>
+        <option>Newspaper</option>
+        <option>Mail</option>
+        <option>TV</option>
+        <option>Radio</option>
+        <option>Email</option>
+        <option>Other</option>
+
+      </select>
+
+      <div class="mb-3 align-left">
+        <label for="exampleFormControlTextarea1" class="form-label">Enter your message</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" style="height: 100px;"></textarea>
+      </div>
+
+      
+      <!-- <div class="col-12">
+        <button type="submit" class="btn btn-danger">Book an appointment</button>
+      </div> -->
+    </form>
+    <!-- Button trigger modal -->
+<input type="submit" value="Book an appointment" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="staticBackdropLabel">Thanks for contacting us!</h3>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Your appointment has been booked successfully!<span id="date-picker"></span>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn" data-bs-dismiss="modal" style="background-color: #1c6889; color: white;">Close</button>
+       
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="map bg-primary" style="margin-top: 50px; height: 350px;">
+      <iframe style="margin: 0%; width: 100%; height: 100%;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2861.88059127874!2d-77.37908092522912!3d44.16832061896453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d62ff54b71e4f5%3A0x2d83632a334bfbf6!2sBelleville%20Dental%20Care!5e0!3m2!1sen!2s!4v1722630509291!5m2!1sen!2s" width="700px" height="" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+  </div>
+
+
+
+  
+
+  <!-- Footer -->
+  <footer class="text-center text-lg-start mt-5 " >
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block ">
+        <span class="fs-4 ">Get connected with us on social networks:</span>
+      </div>
+      <!-- Left -->
+
+      <!-- Right -->
+      <div>
+        <a href="https://www.facebook.com/people/Belleville-Dental-Care/100063752242326/" class="me-4 text-reset">
+          <i class="bi bi-facebook"></i>
+        </a>
+        <a href="https://twitter.com/blvldentalcare" class="me-4 text-reset">
+          <i class="bi bi-twitter"></i>
+        </a>
+        <a href="https://youtube.com/@bellevilledental6238?si=HCi8TJewUEh0ATSs" class="me-4 text-reset">
+          <i class="bi bi-youtube"></i>
+        </a>
+        <a href="https://www.instagram.com/bellevilledentalcare/" class="me-4 text-reset">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/company/belleville-dental-care/?originalSubdomain=ca" class="me-4 text-reset">
+          <i class="bi bi-linkedin"></i>
+        </a>
+
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4 text-center">
+              <img src="./mobile-crop-logo-removebg-preview.png" alt="" width="250rem">
+            </h6>
+            <p>
+              Belleville Dental clinic focuses on patient education to prevent disease and provide different treatment
+              options
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h3 class="text-uppercase fw-bold mb-4">
+              Useful links
+            </h3>
+            <p class="address-link">
+              <a href="./about.html" class="text-reset text-decoration-none">About us</a>
+            </p>
+            <p class="address-link">
+              <a href="contact.html" class="text-reset text-decoration-none">Contact us</a>
+            </p>
+            <p class="address-link">
+              <a href="./dentalproblems.html" class="text-reset text-decoration-none">Dental problems</a>
+            </p>
+            <p>
+              <a href="#!" class="btn btn-danger">Get appointment</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 width-timings">
+            <!-- Links -->
+            <h3 class="text-uppercase fw-bold mb-4">
+              Clinic Timings
+            </h3>
+            <p class="text-reset">Monday: 12pm to 9pm</a>
+            </p>
+            <p class="text-reset">Tuesday: 12pm to 9pm</a>
+            </p>
+            <p class="text-reset">Wednesday: 12pm to 9pm</a>
+            </p>
+            <p class="text-reset">Thursday: 12pm to 9pm</a>
+            </p>
+            <p class="text-reset">Friday: 4pm to 9pm</a>
+            </p>
+            <p class="text-reset">Saturday: 12pm to 9pm</a>
+            </p>
+            <p class="text-reset">Sunday: Off</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h3 class="text-uppercase fw-bold mb-4">Queries</h3>
+            <p class="address-link "> 
+              <a href="https://maps.app.goo.gl/D7GeryVNwbbqEcbW7" class="text-decoration-none text-reset"> <i class="fas fa-home me-3"></i>13 Shop No.7, Yousuf Arcade SC-13 Block "L" North Nazimabad Karachi, SC,
+              Karachi, Pakistan</a>
+            </p>
+            <p class="address-link">
+              <a href="mailto:bellville dental" class="text-decoration-none text-reset ">
+                <i class="fas fa-envelope me-3"></i>
+                askbelleviledental@gmail.com</a>
+            </p>
+            <p><i class="fas fa-phone me-3"></i> +92 3151095674</p>
+            <p><i class="fas fa-print me-3"></i> + 021 234 567 89</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      Copyright©2024 ownwards all rights reserved
+    
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Belleville-Dental-Care</title>
+  <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="./bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+
+  <style>
+    body {
+      margin: 0%;
+      padding: 0%;
+      box-sizing: border-box;
+    }
+
+    .research-banner {
+      height: 450px;
+      margin-top: 126px;
+      display: flex;
+      
+      box-sizing: border-box;
+      width: 100%;
+      margin-right: 0%;
+      margin-left: 0%;
+
+    }
+
+    .research-item1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      width: 35%;
+
+      font-size: 38px;
+      text-align: center;
+      background-image: url(./background\ research.webp);
+      background-size: cover;
+      background-repeat: no-repeat;
+
+    }
+
+    .research-item1 p {
+      width: 90%;
+      font-family: 'Times New Roman', Times, serif;
+      color: black;
+      font-size: 2.3rem;
+      font-weight: bold;
+
+    }
+
+    .research-item2 {
+      width: 65%;
+     
+      
+    }
+
+    .body {
+      font-size: 1.4rem;
+      padding-left: 0%;
+      padding-right: 0%;
+      margin-top: 0%;
+    }
+
+    .treatment {
+      width: 70%;
+      margin: auto;
+
+    }
+
+    .img-div {
+      text-align: center;
+      width: 85%;
+      margin: auto;
+      border: 2px solid black;
+      margin-bottom: 30px;
+    }
+
+    .technology-img {
+      text-align: center;
+      width: 65%;
+      margin: auto;
+      border: 2px solid black;
+      margin-bottom: 30px;
+    }
+
+    h1 {
+      margin-top: 40px;
+      text-transform: capitalize;
+      color: #1c6889;
+      text-align: center;
+    }
+
+    h2 {
+      margin-top: 20px;
+      color: #e88b21;
+    }
+
+    b {
+      font-size: 1.5rem;
+    }
+
+    li {
+      margin-bottom: 15px;
+    }
+
+    .types-container {
+      display: flex;
+      justify-content: space-between;
+
+      width: 80%;
+      margin-bottom: 20px;
+    }
+
+    .types-item1 {
+      width: 58%;
+    }
+
+    .types-item2 {
+      width: 38%;
+    }
+
+    @media screen and (min-width:1px) and (max-width:850px) {
+      .research-banner{
+        width:100%;
+      }
+      .research-item1{
+        display: none;
+      }
+      .research-item2{
+        width: 100%;
+      }
+      body{
+        padding: 0%;
+        margin: 0%;
+        font-size: 1.2rem;
+      }
+      .body{
+        font-size: 1.2rem;
+      }
+      
+    }
+
+     @media screen and (min-width:1px) and (max-width:1000px) {
+      /*
+      .body {
+        width: 900px;
+        padding: 0%;
+        margin: 0%;
+      }
+      body{
+        margin: 0%;
+        padding: 0%;
+        width: 100%
+      }
+
+      .types-container {
+        display: block;
+        width: 95%;
+      }
+
+      .types-item1 {
+        display: block;
+        width: 100%;
+      }
+
+      .types-item2 {
+        display: block;
+        width: 100%;
+      }
+
+      .research-banner{
+        width: 100%;
+        }*/
+        .treatment {
+          width: 95%;
+        }
+        } 
+
+    @media screen and (min-width:1001px) and (max-width:1200px) {
+      .types-container {
+        width: 100%;
+      }
+
+      .types-item1 {
+        width: 45%;
+      }
+
+      .types-item2 {
+        width: 50%;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="./mobile-crop-logo-removebg-preview.png" alt="" width="200px"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="padding: 0%; margin-right: 40px;"><i class="bi bi-list" style="font-size: 45px;" ></i>
+      <!-- <span class="navbar-toggler-icon" ></span> -->
+    </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class=" nav-link  animate__animated animate__fadeInLeftBig" style="animation-delay: 0s;" aria-current="page" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle animate__animated animate__fadeInLeftBig" style="animation-delay: 0.2s;" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="./teethwhitening.html">Teeth whitening</a></li>
+              <li><a class="dropdown-item" href="./dental implant.html">Dental Implants</a></li>
+              <li><a class="dropdown-item" href="./dentures.html">Dentures</a></li>
+              <li><a class="dropdown-item" href="./rootcanaltreatment.html">Root Canal</a></li>
+              <li><a class="dropdown-item" href="./scaling.html">Scaling</a></li>
+
+              <li><a class="dropdown-item" href="./aligners.html">Aligners</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle animate__animated animate__fadeInLeftBig active" style="animation-delay: 0.4s;" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Research & developments
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="./dentalproblems.html">Dental problems</a></li>
+              <li><a class="dropdown-item" href="./products.html">Dental products</a></li>
+            </ul>
+          </li>
+
+
+
+         
+          <li class="nav-item">
+            <a class="nav-link animate__animated animate__fadeInLeftBig" style="animation-delay: 0.6s;" href="about.html">About us</a>
+          </li>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link animate__animated animate__fadeInLeftBig" style="animation-delay: 0.8s;" href="contact.html">Contact us</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+
+  <a href="./contact.html" class="btn btn-danger booking-advertising">Book an appointment</a>
+
+  <div class="research-banner">
+    <div class="research-item1">
+      <!-- <p>New developments and recent dental innovations: <br> Dentistry industry trends for 2024</p> -->
+      <p class="animate__animated animate__fadeInUpBig" style="animation-duration: 0.7s;">Influence of New Technology in Dental Care:  <br>A Public Health Perspective</p>
+    </div>
+    <div class="research-item2">
+      <img src="./research-banner-img.jpg" alt="" width="100%" height="100%" class="animate__animated animate__fadeIn" style="animation-duration: 2.5s;">
+    </div>
+  </div>
+
+  <div class="body">
+    <div class="treatment">
+
+      <h1>Amazing Innovations in Modern Dentistry</h1>
+      <p class="text-center">The field of dentistry is constantly evolving and changing to better suit patient needs. If
+        you haven't visited
+        a dentist for some time, you may be surprised to discover that there are a lot of new options to keep teeth
+        healthy and beautiful.</p>
+      <div class="img-div">
+        <img src="./dental_technology_sm.webp" alt="" width="100%">
+      </div>
+      <p>Advancements in dental technology can offer you modern solutions to traditional dental problems. There are many
+        dental innovations that your dentist may choose to offer, depending on the case.</p>
+      <p>The main desire is to provide you, as a patient, with leading-edge dental treatment that can be performed in a
+        more efficient, effective and comfortable manner.</p>
+      <p>Many dental practices are already advertising their new dental technology; so let's take a closer look at some
+        of the more popular modern technologies that can greatly improve dental treatments.</p>
+
+      <h1>New technologies that better detect and treat caries</h1>
+      <ul>
+        <li>
+          <h2>Diagnodent</h2>
+          <p>Diagnodent is a new, state of the art device that dentists use to detect early cavities. It is a small
+            portable device that uses sound pulse and laser to detect caries earlier than traditional methods can.</p>
+          <div class="technology-img">
+            <img src="./diagnodent.webp" alt="" width="100%">
+          </div>
+          <p>The device is particularly useful when caries are hiding in places regular X-rays can’t find (such as
+            occlusal grooves and pits). The accuracy of diagnosing early lesions is significantly higher, so treatment
+            can commence immediately, limiting the amount of decay allowed to occur and preserving the maximum amount of
+            natural healthy tooth structure.</p>
+        </li>
+
+
+
+        <li>
+          <h2>Air Abrasion</h2>
+        </li>
+        <p>Air abrasion is another dental innovation that serves as an alternative to a traditional dental drill. The
+          air-abrasion system is primarily used to treat small cavities, but it can also be used to help repair old
+          tooth restorations or remove superficial stains and tooth discolorations.</p>
+        <div class="technology-img">
+          <img src="./air-abrasion.webp" alt="" width="100%">
+        </div>
+        <p>During air abrasion, a fine stream of particles is aimed at the stained or decayed portion of the tooth. The
+          blast consists of air and aluminum oxide particles; this mixture is propelled toward the tooth surface by
+          compressed air or a gas that runs through the dental handpiece. Small particles of decay on the tooth surface
+          are removed as the stream of particles strikes them. The particles of decay are then "suctioned" away through
+          a thin tube.</p>
+        <p>Compared to the traditional drilling method, air abrasion generates no heat, pressure, or vibration, thus
+          reducing the need for anesthesia and preserving more of the tooth's healthy structure. Air abrasion is a safe
+          procedure. The only precautions needed before air abrasion are protective eyewear (to prevent eye irritation
+          from the spray) and the use of a rubber dam.</p>
+
+        <li>
+          <h2>Dental Microscope</h2>
+        </li>
+        <p>Microscopes offer dentists the ability to see micro-cracks, weakened underlying tooth structure and the
+          proximity of the dental nerves with precise accuracy.</p>
+        <div class="technology-img">
+          <img src="./dental_microscope.webp" alt="" width="100%">
+        </div>
+        <p>Microscopes also provide more accuracy in removing decayed tooth, while preserving healthy tooth structure.
+          The microscope is an improved diagnostic tool as well as a treatment assist dental tool. Besides cavity
+          treatment, it can be successfully used in Endodontics, Oral Surgery or Periodontics.</p>
+
+
+        <li>
+          <h2>CT Scan</h2>
+        </li>
+        <p>The CT Scan or CAT Scan has become a vital tool in the diagnosing of dental implant position and placement. A
+          CT Scan (computed tomography) is an imaging method that uses x-rays to create pictures of cross-sections of
+          the body. Modern CT scan software can provide three-dimensional images of a high quality and extreme
+          complexity.</p>
+        <div class="technology-img">
+          <img src="./CT_scan-3.webp" alt="" width="100%">
+        </div>
+        <p>The CT scanning software allows the dentist to determine if bone quantity and quality exist and can be used
+          to virtually place dental implants using the computer program prior to any surgical intervention. Thus, it
+          eliminates the possible manual placement errors and matches planning to prosthetic requirements.</p>
+        <p>CT scan technology has become increasingly specialized in dentistry as implants have become the standard of
+          care for tooth replacement.</p>
+
+        <li>
+          <h2>Cone-beam computed tomography (CBCT)</h2>
+        </li>
+        <p>A CBCT is a compact, faster and safer version of the regular CT. Through the use of a cone-shaped X-Ray beam,
+          the size of the scanner, radiation dosage and time needed for scanning are all dramatically reduced.</p>
+        <div class="technology-img">
+          <img src="./cbct-2.jpg" alt="" width="100%">
+        </div>
+        <p>The CBCT produces 3D type images that let the dentist look at mouth structures from different vantage points;
+          it can show the width of mouth structures in addition to their height. It also can show things like cysts and
+          impacted teeth, as well as nerves and arteries that might make the implantation more challenging.</p>
+
+          <li><h2>Better bone grafting techniques</h2></li>
+          <p>In dental implantology, bone grafting is necessary when there is a lack of bone. For an implant to osseointegrate, it needs to be surrounded by a healthy quantity of bone. To achieve an adequate width and height of bone, various bone grafting techniques have been developed.</p>
+          <div class="technology-img">
+            <img src="./bone-grafting-modern.webp" alt="" width="100%">
+          </div>
+          <p>During the healing phase, natural bone replaces the graft, forming a new bony base for the implant and adding volume to the bone. The process is called guided bone regeneration (GBR).</p>
+          <p>Bone replacement performed by clinicians today is more refined than in the past and can be more easily assimilated into the existing bone structure.</p>
+          <li><h2>Digital X-Rays</h2></li>
+          <p>Digital X-rays are faster and contain less radiation than traditional X-rays. This modern dental technique is also more comfortable and allows dentists to find problems with your teeth, mouth, and jaw faster. Digital radiographs offer a way to capture dental images through a sensor that processes the image onto a computer screen.</p>
+          <div class="technology-img">
+            <img src="./digital_x_ray.webp" alt="" width="100%">
+          </div>
+          <p>When a patient has a digital X-ray done, the image appears on the computer in a matter of seconds. The X-ray can be printed on photographic film or it can be copied to a CD or released via e-mail. The dentist has the possibility to zoom into the image or perform various measurements with the help of a computer software.</p>
+          <p>Digital X-rays are less harmful to patients as they contain up to 90% less radiation compared to traditional X-rays... learn more about dental X-rays
+          </p>
+          <li><h2>CAD/CAM Technology</h2></li>
+          <p>CAD/CAM (computer assisted design, computer assisted manufacture) technology allows for the fabrication of dental restorations through computerized technology.</p>
+          <p>The CAD/CAM systems can improve the design and creation of dental restorations, including crowns, veneers, inlays and onlays, fixed bridges, dental implant restorations, zirconia frames, dentures (removable or fixed), and even orthodontic appliances.</p>
+          <div class="technology-img">
+            <img src="./cad_cam_system_1.webp" alt="" width="100%">
+          </div>
+          <p>This modern technology can also be used to complete tooth restorations (such as crowns, bridges, veneers, and inlays) in one visit. When using the traditional method, such restorations would require at least two visits to complete. This process is known as the CEREC technology and it allows dentists to construct, produce, and insert individual ceramic restorations directly at the point of treatment.</p>
+        </ul>
+    </div>
+    <h3 style="width: 80%; margin: auto; margin-top: 30px;"> <span style="color: #e88b21;">Visit Belleville dental clinic today!</span><span style="color: #1c6889;"> By using new and advancing technology in our dental practices,</span> we can make your visit as comfortable and efficient as possible!</h3>
+<div style="width: fit-content; margin: auto; margin-top: 20px;">
+  <a href="./contact.html" class="btn btn-danger">Book an appointment</a>
+</div>
+  </div>
+
+   <!-- Footer -->
+   <footer class="text-center text-lg-start mt-5 " >
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block ">
+        <span class="fs-4 ">Get connected with us on social networks:</span>
+      </div>
+      <!-- Left -->
+
+      <!-- Right -->
+      <div>
+        <a href="https://www.facebook.com/people/Belleville-Dental-Care/100063752242326/" class="me-4 text-reset">
+          <i class="bi bi-facebook"></i>
+        </a>
+        <a href="https://twitter.com/blvldentalcare" class="me-4 text-reset">
+          <i class="bi bi-twitter"></i>
+        </a>
+        <a href="https://youtube.com/@bellevilledental6238?si=HCi8TJewUEh0ATSs" class="me-4 text-reset">
+          <i class="bi bi-youtube"></i>
+        </a>
+        <a href="https://www.instagram.com/bellevilledentalcare/" class="me-4 text-reset">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/company/belleville-dental-care/?originalSubdomain=ca" class="me-4 text-reset">
+          <i class="bi bi-linkedin"></i>
+        </a>
+
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4 text-center">
+              <img src="./mobile-crop-logo-removebg-preview.png" alt="" width="250rem">
+            </h6>
+            <p>
+              Belleville Dental clinic focuses on patient education to prevent disease and provide different treatment
+              options
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h3 class="text-uppercase fw-bold mb-4">
+              Useful links
+            </h3>
+            <p class="address-link">
+              <a href="./about.html" class="text-reset text-decoration-none">About us</a>
+            </p>
+            <p class="address-link">
+              <a href="contact.html" class="text-reset text-decoration-none">Contact us</a>
+            </p>
+            <p class="address-link">
+              <a href="./dentalproblems.html" class="text-reset text-decoration-none">Dental problems</a>
+            </p>
+            <p>
+              <a href="#!" class="btn btn-danger">Get appointment</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 width-timings">
+            <!-- Links -->
+            <h3 class="text-uppercase fw-bold mb-4">
+              Clinic Timings
+            </h3>
+            <p class="text-reset">Monday: 12pm to 9pm</a>
+            </p>
+            <p class="text-reset">Tuesday: 12pm to 9pm</a>
+            </p>
+            <p class="text-reset">Wednesday: 12pm to 9pm</a>
+            </p>
+            <p class="text-reset">Thursday: 12pm to 9pm</a>
+            </p>
+            <p class="text-reset">Friday: 4pm to 9pm</a>
+            </p>
+            <p class="text-reset">Saturday: 12pm to 9pm</a>
+            </p>
+            <p class="text-reset">Sunday: Off</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h3 class="text-uppercase fw-bold mb-4">Queries</h3>
+            <p class="address-link "> 
+              <a href="https://maps.app.goo.gl/D7GeryVNwbbqEcbW7" class="text-decoration-none text-reset"> <i class="fas fa-home me-3"></i>13 Shop No.7, Yousuf Arcade SC-13 Block "L" North Nazimabad Karachi, SC,
+              Karachi, Pakistan</a>
+            </p>
+            <p class="address-link">
+              <a href="mailto:bellville dental" class="text-decoration-none text-reset ">
+                <i class="fas fa-envelope me-3"></i>
+                askbelleviledental@gmail.com</a>
+            </p>
+            <p><i class="fas fa-phone me-3"></i> +92 3151095674</p>
+            <p><i class="fas fa-print me-3"></i> + 021 234 567 89</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      Copyright©2024 ownwards all rights reserved
+    
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+</body>
+
+</html>

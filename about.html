@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Belleville-Dental-Care</title>
+  <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <script src="./bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <script src="jqery.js"></script>
+  <!-- MDB -->
+  <!-- <link
+  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.3.2/mdb.min.css"
+  rel="stylesheet"
+  /> -->
+  <style>
+   
+
+    .body {
+      font-size: 1.4rem;
+      padding-left: 2%;
+      padding-right: 2%;
+      background-color: rgb(210, 250, 250);
+
+    }
+
+    .treatment {
+      width: 800px;
+    }
+
+    .about-heading {
+      margin-top: 40px;
+    }
+
+    h1 {
+      margin-top: 30px;
+      color: #1c6889;
+    }
+
+    h2 {
+      margin-top: 20px;
+      color: #e88b21;
+    }
+
+    b {
+      font-size: 1.5rem;
+    }
+
+    li {
+      margin-bottom: 15px;
+    }
+
+    .types-container {
+      display: flex;
+      justify-content: space-between;
+
+      width: 80%;
+      margin-bottom: 20px;
+    }
+
+    .types-item1 {
+      width: 58%;
+    }
+
+    .types-item2 {
+      width: 38%;
+      align-content: center;
+    }
+
+    .about-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 40px;
+    }
+
+    .about-item1 {
+      width: 48%;
+    }
+
+    .about-item2 {
+      width: 23%;
+    }
+
+    .about-item3 {
+      width: 23%;
+    }
+
+    .card {
+      margin-top: 10px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      margin-left: 10px;
+      border: 2px solid black;
+      border-radius: 15px;
+      overflow: hidden;
+    }
+
+    .card img {
+      height: 350px;
+      width: 100%;
+     
+    }
+
+    .card-title {
+      font-size: 1.7rem;
+    }
+
+    .card-text {
+      font-size: 1.2rem;
+    }
+
+    .nav-item {
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+
+    .width-timings {
+      width: 260px;
+    }
+
+    @media screen and (min-width:1000px) and (max-width:1300px) {
+      .about-item3 {
+        display: none;
+      }
+
+      .about-item1 {
+        width: 55%;
+      }
+
+      .about-item2 {
+        width: 40%;
+      }
+
+      .work-experience {
+        display: inline-block;
+        width: 25%;
+      }
+
+      .satisfied {
+        width: 25%;
+      }
+
+      .client-reviews {
+        width: 31%;
+      }
+      body {
+        padding: 0%;
+        margin: 0%;
+      }
+
+      .body {
+        padding: 0%;
+        margin: 0%;
+      }
+    }
+
+    @media screen and (min-width:1px) and (max-width:999px) {
+      .about-container {
+        display: block;
+        text-align: center;
+      }
+
+      .about-item1 {
+        width: 93%;
+        text-align: left;
+        margin: auto;
+      }
+
+      .about-item2 {
+        width: 70%;
+        height: 450px;
+        margin: auto;
+      }
+
+      .about-item3 {
+        display: none;
+      }
+
+      body {
+        padding: 0%;
+        margin: 0%;
+      }
+
+      .body {
+        padding: 0%;
+        margin: 0%;
+      }
+
+      .work-experience {
+        display: inline-block;
+        height: auto;
+      }
+
+      .satisfied {
+        height: auto;
+        margin-bottom: 30px;
+      }
+
+      .client-reviews {
+        width: 85%;
+        padding-top: 100px;
+        margin: auto;
+        background-color: aquamarine;
+      }
+
+      
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="./mobile-crop-logo-removebg-preview.png" alt="" width="200px"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="padding: 0%; margin-right: 40px;"><i class="bi bi-list" style="font-size: 45px;" ></i>
+      <span class="navbar-toggler-icon" ></span>
+    </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class=" nav-link animate__animated animate__fadeInLeftBig" style="animation-delay: 0s;" aria-current="page" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle animate__animated animate__fadeInLeftBig" style="animation-delay: 0.2s;" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="./teethwhitening.html">Teeth whitening</a></li>
+              <li><a class="dropdown-item" href="./dental implant.html">Dental Implants</a></li>
+              <li><a class="dropdown-item" href="./dentures.html">Dentures</a></li>
+              <li><a class="dropdown-item" href="./rootcanaltreatment.html">Root Canal</a></li>
+              <li><a class="dropdown-item" href="./scaling.html">Scaling</a></li>
+
+              <li><a class="dropdown-item" href="./aligners.html">Aligners</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle animate__animated animate__fadeInLeftBig" style="animation-delay: 0.4s;" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Patient education
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="./dentalproblems.html">Dental problems</a></li>
+              <li><a class="dropdown-item" href="./research.html">Research & advancement</a></li>
+              <li><a class="dropdown-item" href="./products.html">Dental products</a></li>
+            </ul>
+          </li>
+
+
+
+         
+          <li class="nav-item">
+            <a class="nav-link active animate__animated animate__fadeInLeftBig" style="animation-delay: 0.6s;" href="about.html">About us</a>
+          </li>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link animate__animated animate__fadeInLeftBig" style="animation-delay: 0.8s;" href="contact.html">Contact us</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+  <a href="./contact.html" class="btn btn-danger booking-advertising">Book an appointment</a>
+
+  <div class="body">
+
+    <h1 class="text-center about-heading animate__animated animate__fadeIn">ABOUT US</h1>
+    <div class="w-75 mx-auto text-center">
+      <p class=" animate__animated animate__fadeIn">As a leading dental practice, we are dedicated to providing exceptional oral care and creating a comfortable
+        and welcoming environment for our patients. With our team of highly skilled dentists and staff, we strive for
+        excellence in every aspect of our practice.</p>
+    </div>
+
+    <div class="about-container">
+      <div class="about-item1">
+        <h2>Your Perfect Smile:</h2>
+        <h2>Where Trust and Dentistry Align</h2>
+        <p>At Dental Clinic, we are dedicated to providing you with an exceptional dental experience. Our clinic follows
+          strict hygiene and sterilization protocols and is equipped with the latest advancements in dental technology.
+          We utilize digital radiography, rotary machines, 3D scanning, and a CAD CAM System to ensure precise and
+          efficient dental care.</p>
+        <div class="inside-container d-flex">
+          <div class="inside-item1">
+            <img class="me-3" src="./dental_care_w0divvvlfmvh_512-fotor-bg-remover-20240718164435.png" alt=""
+              width="100px">
+          </div>
+          <div class="inside-item2">
+            <h3>Complete Dental Care</h3>
+            <p>Complete dental care encompasses regular check-ups, cleaning, fillings, root canals, extractions, and
+              other treatments to maintain optimal oral health.</p>
+          </div>
+        </div>
+        <div class="inside-container d-flex">
+          <div class="inside-item1">
+            <img class="me-3"
+              src="./healthy_tooth_a4a8v0n5w25f_512 (1)-fotor-bg-remover-20240718161919-fotor-bg-remover-20240718165819.png"
+              alt="" width="100px">
+          </div>
+          <div class="inside-item2">
+            <h3>
+              Exceptional Dental Care</h3>
+            <p>Experience uncompromising dental excellence through our stringent hygiene protocols. your safety and
+              well-being are our unwavering priorities at every appointment.</p>
+          </div>
+        </div>
+      </div>
+      <div class="about-item2">
+        <img src="./about-pic.jpg" alt="" width="100%" height="100%">
+      </div>
+      <div class="about-item3">
+        <img src="./about-pic-2.jpg" alt="" width="100%">
+      </div>
+    </div>
+    <hr>
+    <div class="about-container experience-years ">
+      <div class="about-item1">
+        <h2 class="fs-1">Dental Clinic - 18 Years Of Smiles</h2>
+        <p>18 years of delivering exceptional dental services, Belleville dental clinic has earned the trust of
+          satisfied customers, making
+          us the preferred choice for all your oral health needs.</p>
+      </div>
+      <div class="about-item2 text-center satisfied">
+        <img src="./satisfied-customer-pic.png" alt="" width="100px">
+        <h3 class="fs-1 mt-2">6000+</h3>
+        <h1 class="fs-4 mt-1">Satisfied Patients</h1>
+      </div>
+      <div class="about-item3 text-center work-experience">
+        <img src="./experience_yygzyy49tjwu_512-fotor-bg-remover-20240718174048.png" alt="" width="100px">
+        <h3 class="fs-1 mt-2">18+</h3>
+        <h1 class="fs-4 mt-1">Years Of Experience</h1>
+      </div>
+    </div>
+    <hr>
+
+    <h1 class="fs-1 mt-5 text-center ">Our Expert Dentists</h1>
+
+    <div class="experts-container d-flex flex-wrap justify-content-center mb-5">
+      <div class="card" style="width: 22rem;">
+        <img src="./dr.momin.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Dr. Momin</h5>
+          <p class="card-text">BDS, MS Periodontology Consultant Dental Surgeon, Periodontist and Implantologist.</p>
+        </div>
+      </div>
+
+      <div class="card" style="width: 22rem;">
+        <img src="./dr.ejaz.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Dr. Ejaz</h5>
+          <p class="card-text">BDS, FCPS Operative Dentistry and Endodontics (R), D-Implant Consultant Restorative
+            Dentist</p>
+        </div>
+      </div>
+
+      <div class="card" style="width: 22rem;">
+        <img src="./dr.umer (2).jpg" class="" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Dr. Umer Yaar</h5>
+          <p class="card-text">BDS, FCPS Orthodontics (R) Consultant
+            Orthodontist</p>
+        </div>
+      </div>
+
+      <div class="card" style="width: 22rem;">
+        <img src="./dr-faiq-2.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Dr. Faiq</h5>
+          <p class="card-text">BDS, Consultant Dental Surgeon and specialist in Paediatric Dentistry</p>
+        </div>
+      </div>
+
+      <div class="card" style="width: 22rem;">
+        <img src="./dr.shebaz2.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Dr. Shahbaz</h5>
+          <p class="card-text">Dental Hygienist, Masters in Public Health
+            (MSPH)</p>
+        </div>
+      </div>
+
+    </div>
+
+
+    <section>
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-10 col-xl-8 text-center mb-5">
+          <h1 class="mb-2">Our Clients Reviews</h1>
+          <p class="mb-4 pb-2 mb-md-5 pb-md-0">
+            We are honored to work with a great group of clients and we understand the value of earning a testimonial
+            these days. We have shared some here <br>
+            Our clients are happy to share their experience working with us.</p>
+        </div>
+      </div>
+
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-3 mb-md-0 ms-1 me-1 client-reviews"
+          style="background-color:#1c6889;color: white; border-radius: 22px; border: 2px solid black; margin-top: 100px;">
+          <div class="d-flex justify-content-center mb-4">
+            <img src="./pexels-italo-melo-881954-2379005.jpg" class="rounded-circle shadow-1-strong" width="150"
+              height="150" />
+          </div>
+          <h3 class="mb-3 text-center">Adnan ali</h3>
+
+          <p class="px-xl-3">
+            <i class="fas fa-quote-left pe-2"></i>I have got the crown of dental implant extracted and get the new one
+            fixed. Quick & Painless procedure, also the new crown is very well designed and a perfect fit.
+          </p>
+          <ul class="list-unstyled d-flex justify-content-center mb-0">
+            <li>
+              <i class="fas fa-star fa-sm text-warning"></i>
+            </li>
+            <li>
+              <i class="fas fa-star fa-sm text-warning"></i>
+            </li>
+            <li>
+              <i class="fas fa-star fa-sm text-warning"></i>
+            </li>
+            <li>
+              <i class="fas fa-star fa-sm text-warning"></i>
+            </li>
+            <li>
+              <i class="fas fa-star-half-alt fa-sm text-warning"></i>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-md-0 ms-1 me-1 client-reviews"
+          style="background-color: #1c6889;color: white; border-radius: 22px; border: 2px solid black; margin-top: 100px;">
+          <div class="d-flex justify-content-center mb-4">
+            <img src="./smiling-portrait-face-real-man-260nw-146693843.webp" class="rounded-circle shadow-1-strong"
+              width="150" height="150" />
+          </div>
+          <h3 class="mb-3 text-center">Furqan ahmed</h3>
+
+          <p class="px-xl-3">
+            <i class="fas fa-quote-left pe-2"></i>Highly recommend! Thanks to Dr. Momin and his team, for the great
+            experience and quality work you have done on my teeth. Excellent Dr, service, and ease of scheduling. I was
+            very pleased with the experience and results.
+
+          <ul class="list-unstyled d-flex justify-content-center mb-0">
+            <li>
+              <i class="fas fa-star fa-sm text-warning"></i>
+            </li>
+            <li>
+              <i class="fas fa-star fa-sm text-warning"></i>
+            </li>
+            <li>
+              <i class="fas fa-star fa-sm text-warning"></i>
+            </li>
+            <li>
+              <i class="fas fa-star fa-sm text-warning"></i>
+            </li>
+            <li>
+              <i class="fas fa-star fa-sm text-warning"></i>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3 ms-1 me-1 client-reviews"
+          style="background-color: #1c6889; color: white; border-radius: 22px; border: 2px solid black; margin-top: 100px;">
+          <div class="d-flex justify-content-center mb-4">
+            <img src="./arabian-woman-face-covered-hijab-260nw-608009543.webp" class="rounded-circle shadow-1-strong"
+              width="150" height="150" />
+          </div>
+          <h3 class="mb-3 text-center">Fozia nadeem</h3>
+
+          <p class="px-xl-3">
+            <i class="fas fa-quote-left pe-2"></i>Great experience at Belleville Dental Clinic! Professional staff,
+            skilled hygienist, and modern facilities. My scaling and polishing was thorough and comfortable. Highly
+            recommend!
+          </p>
+          <ul class="list-unstyled d-flex justify-content-center mb-0">
+            <li>
+              <i class="fas fa-star fa-sm text-warning"></i>
+            </li>
+            <li>
+              <i class="fas fa-star fa-sm text-warning"></i>
+            </li>
+            <li>
+              <i class="fas fa-star fa-sm text-warning"></i>
+            </li>
+            <li>
+              <i class="fas fa-star fa-sm text-warning"></i>
+            </li>
+            <li>
+              <i class="far fa-star fa-sm text-warning"></i>
+            </li>
+          </ul>
+        </div>
+
+
+      </div>
+
+  </div>
+  <div class="review-container d-flex justify-content-center">
+    <a href="https://maps.app.goo.gl/HcGQvXRM9iGcaGJv8" class="btn btn-danger mt-4">See more reviews</a>
+
+  </div>
+  </section>
+
+
+  <p style="font-size: 45px; width: 550px; margin: auto; margin-top: 70px; margin-bottom: 100px; font-weight: bold; text-align: center;">No. of visited users:
+  <span id="visit-counter" style="color: #e88b21; font-size: 50px; font-weight: bold;">LOADING.........</span></p>
+
+
+
+  <script>
+      $(document).ready(function(){
+          let visitcount = parseInt(localStorage.getItem('visitcount')) || 0;
+          visitcount++;
+          localStorage.setItem('visitcount' , visitcount);
+          $('#visit-counter').text(visitcount);
+      });
+
+
+  </script>
+  </div>
+
+
+  <!-- Footer -->
+  <footer class="text-center text-lg-start mt-5 ">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block ">
+        <span class="fs-4 ">Get connected with us on social networks:</span>
+      </div>
+      <!-- Left -->
+
+      <!-- Right -->
+      <div>
+        <a href="https://www.facebook.com/people/Belleville-Dental-Care/100063752242326/" class="me-4 text-reset">
+          <i class="bi bi-facebook"></i>
+        </a>
+        <a href="https://twitter.com/blvldentalcare" class="me-4 text-reset">
+          <i class="bi bi-twitter"></i>
+        </a>
+        <a href="https://youtube.com/@bellevilledental6238?si=HCi8TJewUEh0ATSs" class="me-4 text-reset">
+          <i class="bi bi-youtube"></i>
+        </a>
+        <a href="https://www.instagram.com/bellevilledentalcare/" class="me-4 text-reset">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/company/belleville-dental-care/?originalSubdomain=ca" class="me-4 text-reset">
+          <i class="bi bi-linkedin"></i>
+        </a>
+
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4 text-center">
+              <img src="./mobile-crop-logo-removebg-preview.png" alt="" width="250rem">
+            </h6>
+            <p>
+              Belleville Dental clinic focuses on patient education to prevent disease and provide different treatment
+              options
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h3 class="text-uppercase fw-bold mb-4">
+              Useful links
+            </h3>
+            <p class="address-link">
+              <a href="./about.html" class="text-reset text-decoration-none">About us</a>
+            </p>
+            <p class="address-link">
+              <a href="contact.html" class="text-reset text-decoration-none">Contact us</a>
+            </p>
+            <p class="address-link">
+              <a href="./dentalproblems.html" class="text-reset text-decoration-none">Dental problems</a>
+            </p>
+            <p>
+              <a href="#!" class="btn btn-danger">Get appointment</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 width-timings">
+            <!-- Links -->
+            <h3 class="text-uppercase fw-bold mb-4">
+              Clinic Timings
+            </h3>
+            <p class="text-reset">Monday: 12pm to 9pm</a>
+            </p>
+            <p class="text-reset">Tuesday: 12pm to 9pm</a>
+            </p>
+            <p class="text-reset">Wednesday: 12pm to 9pm</a>
+            </p>
+            <p class="text-reset">Thursday: 12pm to 9pm</a>
+            </p>
+            <p class="text-reset">Friday: 4pm to 9pm</a>
+            </p>
+            <p class="text-reset">Saturday: 12pm to 9pm</a>
+            </p>
+            <p class="text-reset">Sunday: Off</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h3 class="text-uppercase fw-bold mb-4">Queries</h3>
+            <p class="address-link ">
+              <a href="https://maps.app.goo.gl/D7GeryVNwbbqEcbW7" class="text-decoration-none text-reset"> <i
+                  class="fas fa-home me-3"></i>13 Shop No.7, Yousuf Arcade SC-13 Block "L" North Nazimabad Karachi, SC,
+                Karachi, Pakistan</a>
+            </p>
+            <p class="address-link">
+              <a href="mailto:bellville dental" class="text-decoration-none text-reset ">
+                <i class="fas fa-envelope me-3"></i>
+                askbelleviledental@gmail.com</a>
+            </p>
+            <p><i class="fas fa-phone me-3"></i> +92 3151095674</p>
+            <p><i class="fas fa-print me-3"></i> + 021 234 567 89</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      Copyright©2024 ownwards all rights reserved
+
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+</body>
+
+</html>

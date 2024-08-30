@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belleville-Dental-Care</title>
+    <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/fontawesome.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="./bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+    <style>
+        .body {
+            font-size: 1.4rem;
+            padding-left: 2%;
+            padding-right: 5%;
+        }
+
+        .treatment {
+            width: 800px;
+            margin: auto;
+        }
+
+        h1 {
+            margin-top: 40px;
+            text-transform: capitalize;
+            color: #1c6889;
+        }
+
+        h2 {
+            margin-top: 20px;
+            color: #e88b21;
+        }
+
+        b {
+            font-size: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 15px;
+        }
+
+        .types-container {
+            display: flex;
+            justify-content: space-between;
+
+            width: 80%;
+            margin-bottom: 20px;
+        }
+
+        .types-item1 {
+            width: 58%;
+        }
+
+        .types-item2 {
+            width: 38%;
+        }
+
+        @media screen and (min-width:1px) and (max-width:1000px) {
+    .body{
+        width: 900px;
+    }
+    body {
+        padding: 0%;
+        margin: 0%;
+      }
+
+      .body {
+        padding: 1%;
+        margin: 0%;
+      }
+    .types-container{
+        display: block;
+        width: 95%;
+    }
+    .types-item1{
+        display: block;
+        width: 100%;
+    }
+    .types-item2{
+        display: block;
+        width: 100%;
+    }
+    .treatment{
+        width: 95%;
+    }
+}
+
+@media screen and (min-width:1001px) and  (max-width:1200px){
+    .types-container{
+width: 100%;
+    }
+    .types-item1{
+        width: 45%;
+    }
+    .types-item2{
+        width: 50%;
+    }
+}
+
+    </style>
+   
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="./mobile-crop-logo-removebg-preview.png" alt="" width="200px"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="padding: 0%; margin-right: 40px;"><i class="bi bi-list" style="font-size: 45px;" ></i>
+      <!-- <span class="navbar-toggler-icon" ></span> -->
+    </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class=" nav-link animate__animated animate__fadeInLeftBig" style="animation-delay: 0s;" aria-current="page" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link active dropdown-toggle animate__animated animate__fadeInLeftBig" style="animation-delay: 0.2s;" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Dental implants
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="./teethwhitening.html">Teeth whitening</a></li>
+              <li><a class="dropdown-item" href="./dental implant.html">Dental Implants</a></li>
+              <li><a class="dropdown-item" href="./dentures.html">Dentures</a></li>
+              <li><a class="dropdown-item" href="./rootcanaltreatment.html">Root Canal</a></li>
+              <li><a class="dropdown-item" href="./scaling.html">Scaling</a></li>
+
+              <li><a class="dropdown-item" href="./aligners.html">Aligners</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle animate__animated animate__fadeInLeftBig" style="animation-delay: 0.4s;" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Patient education
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="./dentalproblems.html">Dental problems</a></li>
+              <li><a class="dropdown-item" href="./research.html">Research & advancement</a></li>
+              <li><a class="dropdown-item" href="./products.html">Dental products</a></li>
+            </ul>
+          </li>
+
+
+
+         
+          <li class="nav-item">
+            <a class="nav-link animate__animated animate__fadeInLeftBig" style="animation-delay: 0.6s;" href="about.html">About us</a>
+          </li>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link animate__animated animate__fadeInLeftBig" style="animation-delay: 0.8s;" href="contact.html">Contact us</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+    <a href="./contact.html" class="btn btn-danger booking-advertising">Book an appointment</a>
+
+    
+    <div class="body">
+        <h1 class="animate__animated animate__fadeInDown">Dental implant surgery</h1>
+        <div class="types-container">
+            <div class="types-item1">
+                <p>Dental implant surgery is a procedure that replaces tooth roots with metal, screwlike posts and
+                    replaces
+                    damaged or missing teeth with artificial teeth that look and function much like real ones. Dental
+                    implant surgery can offer a welcome alternative to dentures or bridgework that doesn't fit well and
+                    can
+                    offer an option when a lack of natural teeth roots don't allow building denture or bridgework tooth
+                    replacements.</p>
+
+                <p>How dental implant surgery is performed depends on the type of implant and the condition of your
+                    jawbone.
+                    Dental implant surgery may involve several procedures. The major benefit of implants is solid
+                    support
+                    for your new teeth — a process that requires the bone to heal tightly around the implant. Because
+                    this
+                    bone healing requires time, the process can take many months.</p>
+            </div>
+            <div class="types-item2 animate__animated animate__fadeIn">
+                <img src="./dental implant image.webp" alt="" width="100%" >
+            </div>
+
+        </div>
+
+
+        <iframe width="" height="" src="https://www.youtube.com/embed/g-i3P-D6p7M?si=Ad-prQEkXNrE6gt3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+        <div class="treatment">
+            <h2>Why its done</h2>
+            <p>Dental implants are surgically placed in your jawbone, where they serve as the roots of missing teeth.
+                Because the titanium in the implants fuses with your jawbone, the implants won't slip, make noise or
+                cause
+                bone damage the way fixed bridgework or dentures might. And the materials can't decay like your own
+                teeth
+                that support regular bridgework can.</p>
+            <p>In general, dental implants may be right for you if you:</p>
+            <ul>
+                <li>Have one or more missing teeth</li>
+                <li>Have a jawbone that's reached full growth</li>
+                <li>Have adequate bone to secure the implants or are able to have a bone graft</li>
+                <li>Have healthy oral tissues</li>
+                <li>Don't have health conditions that will affect bone healing</li>
+                <li>Are unable or unwilling to wear dentures</li>
+                <li>Want to improve your speech</li>
+                <li>Are willing to commit several months to the process</li>
+                <li>Don't smoke tobacco</li>
+            </ul>
+            <h2>What can you expect</h2>
+            <p>Dental implant surgery is usually an outpatient surgery performed in stages, with healing time between
+                procedures. The process of placing a dental implant involves multiple steps, including:</p>
+            <ol>
+                <li>Damaged tooth removal</li>
+                <li>Jawbone preparation (grafting), when needed</li>
+                <li>Dental implant placement</li>
+                <li>Bone growth and healing</li>
+                <li>Abutment placement</li>
+                <li>Artificial tooth placement</li>
+            </ol>
+            <p>The entire process can take many months from start to finish. Much of that time is devoted to healing and
+                waiting for the growth of new bone in your jaw. Depending on your situation, the specific procedure done
+                or
+                the materials used, certain steps can sometimes be combined.</p>
+       
+        </div>
+     <h2>When bone grafting is required</h2>
+        <div class="types-container">
+            <div class="types-item1">
+                <p>If your jawbone isn't thick enough or is too soft, you may need bone grafting before you can have
+                    dental
+                    implant surgery. That's because the powerful chewing action of your mouth exerts great pressure on
+                    your
+                    bone, and if it can't support the implant, the surgery likely would fail. A bone graft can create a
+                    more
+                    solid base for the implant.</p>
+                <p>There are several bone graft materials that can be used to rebuild a jawbone. Options may include a
+                    natural
+                    bone graft, such as from another location in your body, or a synthetic bone graft, such as
+                    bone-substitute
+                    material that can provide support structures for new bone growth. Talk to your doctor about options
+                    that
+                    will work best for you.</p>
+                <p>It may take several months for the transplanted bone to grow enough new bone to support a dental
+                    implant. In
+                    some cases, you may need only minor bone grafting, which can be done at the same time as the implant
+                    surgery. The condition of your jawbone determines how you proceed.</p>
+            </div>
+            <div class="types-item2">
+                <img src="./bone gragting.webp" alt="" width="100%">
+            </div>
+        </div>
+        <div class="treatment">
+            <h2>Placing the dental implant</h2>
+            <p>During surgery to place the dental implant, your oral surgeon makes a cut to open your gum and expose the
+                bone. Holes are drilled into the bone where the dental implant metal post will be placed. Since the post
+                will serve as the tooth root, it's implanted deep into the bone.
+            </p>
+            <p>At this point, you'll still have a gap where your tooth is missing. A type of partial, temporary denture
+                can
+                be placed for appearance, if needed. You can remove this denture for cleaning and while you sleep.
+            </p>
+            <h2>Waiting for bone growth</h2>
+            <p>Once the metal implant post is placed in your jawbone, osseointegration (oss-ee-oh-in-tuh-GRAY-shun)
+                begins.
+                During this process, the jawbone grows into and unites with the surface of the dental implant. This
+                process,
+                which can take several months, helps provide a solid base for your new artificial tooth — just as roots
+                do
+                for your natural teeth.</p>
+            <h2>Placing the abutment</h2>
+            <p>When osseointegration is complete, you may need additional surgery to place the abutment — the piece
+                where
+                the crown will eventually attach. This minor surgery is typically done with local anesthesia in an
+                outpatient setting.</p>
+            <p>To place the abutment:</p>
+            <ol>
+                <li>Your oral surgeon reopens your gum to expose the dental implant</li>
+                <li>The abutment is attached to the dental implant</li>
+                <li>The gum tissue is then closed around, but not over, the abutment</li>
+            </ol>
+            <p>In some cases, the abutment is attached to the dental implant metal post when the post is implanted. That
+                means you won't need an extra surgical step. Because the abutment juts past the gumline, however, it's
+                visible when you open your mouth — and it will be that way until your dentist completes the tooth
+                prosthesis. Some people don't like that appearance and prefer to have the abutment placed in a separate
+                procedure.</p>
+            <p>After the abutment is placed, your gums must heal for about two weeks before the artificial tooth can be
+                attached.</p>
+            <h2>Choosing your new artificial teeth</h2>
+            <p>Once your gums heal, you'll have more impressions made of your mouth and remaining teeth. These
+                impressions
+                are used to make the crown — your realistic-looking artificial tooth. The crown can't be placed until
+                your
+                jawbone is strong enough to support use of the new tooth.</p>
+            <h2>After the procedure</h2>
+            <p>Whether you have dental implant surgery in one stage or multiple stages, you may experience some of the
+                typical discomforts associated with any type of dental surgery, such as:</p>
+            <ol>
+                <li>Swelling of your gums and face</li>
+                <li>Bruising of your skin and gums</li>
+                <li>Pain at the implant site</li>
+                <li>Minor bleeding</li>
+            </ol>
+            <p>You may need pain medications or antibiotics after dental implant surgery. If swelling, discomfort or any
+                other problem gets worse in the days after surgery, contact your oral surgeon.</p>
+            <p>After each stage of surgery, you may need to eat soft foods while the surgical site heals. Typically,
+                your
+                surgeon will use stitches that dissolve on their own. If your stitches aren't self-dissolving, your
+                doctor
+                removes them.</p>
+            <h2>Results</h2>
+            <p>Most dental implants are successful. Sometimes, however, the bone fails to fuse sufficiently to the metal
+                implant. Smoking, for example, may contribute to implant failure and complications.</p>
+            <p>If the bone fails to fuse sufficiently, the implant is removed, the bone is cleaned up, and you can try
+                the
+                procedure again in about three months.</p>
+            <p>You can help your dental work — and remaining natural teeth — last longer if you:</p>
+            <ul>
+                <li><b>Practice excellent oral hygiene.</b> Just as with your natural teeth, keep implants, artificial
+                    teeth
+                    and gum tissue clean. Specially designed brushes, such as an interdental brush that slides between
+                    teeth, can help clean the nooks and crannies around teeth, gums and metal posts.</li>
+
+                <li><b>See your dentist regularly. </b>Schedule dental checkups to ensure the health and proper
+                    functioning
+                    of your implants and follow the advice for professional cleanings.</li>
+                <li><b>Avoid damaging habits. </b>Don't chew hard items, such as ice and hard candy, which can break
+                    your
+                    crowns — or your natural teeth. Avoid tooth-staining tobacco and caffeine products. Get treatment if
+                    you
+                    grind your teeth.</li>
+            </ul>
+            <div class=" text-center"><a href="./contact.html" class="btn btn-danger">Book an appointment</a></div>
+
+
+        </div>
+    </div>
+
+
+
+    
+
+  <!-- Footer -->
+  <footer class="text-center text-lg-start mt-5 " >
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block ">
+        <span class="fs-4 ">Get connected with us on social networks:</span>
+      </div>
+      <!-- Left -->
+
+      <!-- Right -->
+      <div>
+        <a href="https://www.facebook.com/people/Belleville-Dental-Care/100063752242326/" class="me-4 text-reset">
+          <i class="bi bi-facebook"></i>
+        </a>
+        <a href="https://twitter.com/blvldentalcare" class="me-4 text-reset">
+          <i class="bi bi-twitter"></i>
+        </a>
+        <a href="https://youtube.com/@bellevilledental6238?si=HCi8TJewUEh0ATSs" class="me-4 text-reset">
+          <i class="bi bi-youtube"></i>
+        </a>
+        <a href="https://www.instagram.com/bellevilledentalcare/" class="me-4 text-reset">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/company/belleville-dental-care/?originalSubdomain=ca" class="me-4 text-reset">
+          <i class="bi bi-linkedin"></i>
+        </a>
+
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4 text-center">
+              <img src="./mobile-crop-logo-removebg-preview.png" alt="" width="250rem">
+            </h6>
+            <p>
+              Belleville Dental clinic focuses on patient education to prevent disease and provide different treatment
+              options
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h3 class="text-uppercase fw-bold mb-4">
+              Useful links
+            </h3>
+            <p class="address-link">
+              <a href="./about.html" class="text-reset text-decoration-none">About us</a>
+            </p>
+            <p class="address-link">
+              <a href="contact.html" class="text-reset text-decoration-none">Contact us</a>
+            </p>
+            <p class="address-link">
+              <a href="./dentalproblems.html" class="text-reset text-decoration-none">Dental problems</a>
+            </p>
+            <p>
+              <a href="#!" class="btn btn-danger">Get appointment</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 width-timings">
+            <!-- Links -->
+            <h3 class="text-uppercase fw-bold mb-4">
+              Clinic Timings
+            </h3>
+            <p class="text-reset">Monday: 12pm to 9pm</a>
+            </p>
+            <p class="text-reset">Tuesday: 12pm to 9pm</a>
+            </p>
+            <p class="text-reset">Wednesday: 12pm to 9pm</a>
+            </p>
+            <p class="text-reset">Thursday: 12pm to 9pm</a>
+            </p>
+            <p class="text-reset">Friday: 4pm to 9pm</a>
+            </p>
+            <p class="text-reset">Saturday: 12pm to 9pm</a>
+            </p>
+            <p class="text-reset">Sunday: Off</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h3 class="text-uppercase fw-bold mb-4">Queries</h3>
+            <p class="address-link "> 
+              <a href="https://maps.app.goo.gl/D7GeryVNwbbqEcbW7" class="text-decoration-none text-reset"> <i class="fas fa-home me-3"></i>13 Shop No.7, Yousuf Arcade SC-13 Block "L" North Nazimabad Karachi, SC,
+              Karachi, Pakistan</a>
+            </p>
+            <p class="address-link">
+              <a href="mailto:bellville dental" class="text-decoration-none text-reset ">
+                <i class="fas fa-envelope me-3"></i>
+                askbelleviledental@gmail.com</a>
+            </p>
+            <p><i class="fas fa-phone me-3"></i> +92 3151095674</p>
+            <p><i class="fas fa-print me-3"></i> + 021 234 567 89</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      Copyright©2024 ownwards all rights reserved
+    
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+
+</body>
+
+</html>

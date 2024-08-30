@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Belleville-Dental-Care</title>
+  <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/fontawesome.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <script src="./bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+  <style>
+    .body {
+      font-size: 1.4rem;
+      padding-left: 2%;
+      padding-right: 5%;
+    }
+
+    .treatment {
+      width: 800px;
+      margin: auto;
+    }
+
+    h1 {
+      margin-top: 20px;
+      color: #1c6889;
+    }
+
+    h2 {
+      margin-top: 20px;
+      color: #e88b21;
+    }
+
+    b {
+      font-size: 1.5rem;
+    }
+
+    li {
+      margin-bottom: 15px;
+    }
+
+    .types-container {
+      display: flex;
+      justify-content: space-between;
+
+      width: 80%;
+      margin-bottom: 20px;
+    }
+
+    .types-item1 {
+      width: 58%;
+    }
+
+    .types-item2 {
+      width: 38%;
+    }
+
+    @media screen and (min-width:1px) and (max-width:1000px) {
+    .body{
+        width: 98%;
+        font-size: 1.2rem;
+    }
+    .types-container{
+        display: block;
+        width: 95%;
+    }
+    .types-item1{
+        display: block;
+        width: 100%;
+    }
+    .types-item2{
+        display: block;
+        width: 100%;
+    }
+    .treatment{
+        width: 95%;
+    }
+    body{
+        margin: 0%;
+        padding: 0%;
+    }
+}
+
+@media screen and (min-width:1001px) and  (max-width:1200px){
+    .types-container{
+width: 100%;
+    }
+    .types-item1{
+        width: 45%;
+    }
+    .types-item2{
+        width: 50%;
+    }
+    body{
+        margin: 0%;
+        padding: 0%;
+    }
+}
+
+
+  </style>
+
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="./mobile-crop-logo-removebg-preview.png" alt="" width="200px"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="padding: 0%; margin-right: 40px;"><i class="bi bi-list" style="font-size: 45px;" ></i>
+      <!-- <span class="navbar-toggler-icon" ></span> -->
+    </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class=" nav-link animate__animated animate__fadeInLeftBig" style="animation-delay: 0s;" aria-current="page" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link active dropdown-toggle animate__animated animate__fadeInLeftBig" style="animation-delay: 0.2s;" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Aligners
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="./teethwhitening.html">Teeth whitening</a></li>
+              <li><a class="dropdown-item" href="./dental implant.html">Dental Implants</a></li>
+              <li><a class="dropdown-item" href="./dentures.html">Dentures</a></li>
+              <li><a class="dropdown-item" href="./rootcanaltreatment.html">Root Canal</a></li>
+              <li><a class="dropdown-item" href="./scaling.html">Scaling</a></li>
+
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle animate__animated animate__fadeInLeftBig" style="animation-delay: 0.4s;" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Patient education
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="./dentalproblems.html">Dental problems</a></li>
+              <li><a class="dropdown-item" href="./research.html">Research & advancement</a></li>
+              <li><a class="dropdown-item" href="./products.html">Dental products</a></li>
+            </ul>
+          </li>
+
+
+
+         
+          <li class="nav-item">
+            <a class="nav-link animate__animated animate__fadeInLeftBig" style="animation-delay: 0.6s;" href="about.html">About us</a>
+          </li>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link animate__animated animate__fadeInLeftBig" style="animation-delay: 0.8s;" href="contact.html">Contact us</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+  <a href="./contact.html" class="btn btn-danger booking-advertising">Book an appointment</a>
+
+  
+  <div class="body">
+    <h1 class="animate__animated animate__fadeInDown">What are Clear Aligners?</h1>
+    <div class="types-container">
+      <div class="types-item1">
+        <p>Like traditional braces, clear aligners are designed to move your teeth gradually. They put gentle pressure
+          on your teeth to slightly reposition them, straightening them slowly over time. Clear aligners are one of many
+          technological advancements that orthodontists use to create healthy, beautiful smiles.</p>
+        <p>Clear aligners offer an aesthetic alternative to traditional metal braces. Unlike the brackets and wires of
+          braces, clear aligners are virtually invisible and are made from smooth, transparent, medical-grade plastic.
+          They are custom-fitted to wrap snugly around the teeth, ensuring comfort and improved esthetics.
+
+        </p>
+        <p>Unlike fixed traditional braces, clear aligners can be removed to allow you to maintain your usual diet and
+          hygiene routine. However, for best results, it’s critical to wear your aligners for 20-22 hours per day or as
+          prescribed by your orthodontist.</p>
+      </div>
+      <div class="types-item2 animate__animated animate__fadeIn">
+        <img src="./aligner-picture.jpg" alt="" width="100%">
+      </div>
+    </div>
+
+    <iframe width="" height="" src="https://www.youtube.com/embed/_qoimCQ7O7k?si=hkm2ILPPojtGzLgg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <div class="treatment">
+      <h2>How Do Clear Aligners Work?</h2>
+      <p>Like traditional braces, aligners are designed to shift your teeth into their desired position gently. Before
+        starting treatment, your orthodontist will check your teeth and jaws using X-rays, photos, and digital scans.
+        With the information gathered, your doctor will provide a diagnosis before designing your smile and treatment
+        plan in the aligner software. This details which tooth moves where and in what order, guiding your teeth into
+        healthy positions.</p>
+      <p>Clear aligners aim to create a healthy bite by repositioning all teeth, not just the few that are seen when you
+        smile. It is important to remember that moving teeth is a complex biological process and needs start-to-finish
+        supervision by an orthodontist.</p>
+      <p>Finally, aligners are created using your initial impressions or digital scans as the starting point. On
+        average, each set of aligners is worn for a week or two before switching to the next set. The total number of
+        aligners will depend on your specific needs. Wearing them consistently and as instructed by your orthodontist
+        will help insure your teeth reach their ideal positions.</p>
+
+      <h2>The Advantages of Clear Aligner Therapy</h2>
+      <p>Clear aligner therapy offers several advantages over traditional braces. These benefits contribute to this
+        treatment method’s rising popularity among patients and orthodontists:</p>
+      <ul>
+        <li>
+          <h3>Aesthetics</h3>
+          <p>One of the most compelling advantages of clear aligners is their near invisibility. Made from clear,
+            BPA-free plastic, they are far less noticeable than metal braces. This aesthetic appeal is particularly
+            valued by adults and teens who may be self-conscious about the appearance of traditional braces.</p>
+        </li>
+        <li>
+          <h3>Comfort</h3>
+          <p>Aligners are smooth and custom-made to fit directly over your teeth minimizing discomfort.</p>
+        </li>
+        <li>
+          <h3>Improved Oral Hygiene</h3>
+          <p>The removability of clear aligners is a significant advantage when it comes to oral hygiene. Unlike fixed
+            braces, aligners can be removed for brushing and flossing, allowing you to maintain a more effective oral
+            hygiene routine. This removability also means there are no food restrictions, as there are no wires or
+            brackets that food can get caught in or break.</p>
+        </li>
+        <li>
+          <h3>Treatment Time and Flexibility</h3>
+          <p>For many patients, clear aligner therapy can be faster than traditional braces, depending on the case’s
+            complexity. Aligners move teeth precisely and efficiently to reduce treatment time, and can be removed to
+            offer flexibility not possible with braces.</p>
+        </li>
+      </ul>
+      <h2>The Limitations of Clear Aligners</h2>
+      <p>Clear aligner therapy has many benefits but may not work for all orthodontic issues. Depending on your specific
+        case, braces may be necessary.</p>
+      <p>Clear aligners may not work as predictably for severe malocclusions, significant tooth rotations, and large
+        gaps. Traditional braces may offer more precision in these cases. Secondly, the success of clear aligner
+        treatment heavily relies on your compliance. Since they’re removable, inconsistent aligner wear can hinder your
+        progress, extending the length of treatment or compromising the results.</p>
+      <p>Aligners can trap liquids and food particles against the teeth, increasing the risk of cavities and gum
+        disease.</p>
+      <h2>Best Practices for Clear Aligner Treatment</h2>
+      <p>To ensure the best results, there are a few critical best practices you should follow while undergoing clear
+        aligner therapy, including:</p>
+      <ul>
+        <li>Avoid any drink that is not water while your aligners are in. Liquid trapped against the teeth may stain the
+          aligner and teeth, and can cause cavities to develop.</li>
+        <li>When you remove your aligners, make it a habit to slip them into their case. Do not place aligners in
+          napkins, a pocket, or a purse; keep them away from pets.</li>
+        <li>After eating or drinking, brush your teeth thoroughly before re-inserting your aligners.</li>
+      </ul>
+      <p>If you should lose or damage an aligner, contact your orthodontist immediately for advice.</p>
+      <div class=" text-center"><a href="#" class="btn btn-danger">Book an appointment</a></div>
+    </div>
+  </div>
+
+
+  
+
+  <!-- Footer -->
+  <footer class="text-center text-lg-start mt-5 " >
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block ">
+        <span class="fs-4 ">Get connected with us on social networks:</span>
+      </div>
+      <!-- Left -->
+
+      <!-- Right -->
+      <div>
+        <a href="https://www.facebook.com/people/Belleville-Dental-Care/100063752242326/" class="me-4 text-reset">
+          <i class="bi bi-facebook"></i>
+        </a>
+        <a href="https://twitter.com/blvldentalcare" class="me-4 text-reset">
+          <i class="bi bi-twitter"></i>
+        </a>
+        <a href="https://youtube.com/@bellevilledental6238?si=HCi8TJewUEh0ATSs" class="me-4 text-reset">
+          <i class="bi bi-youtube"></i>
+        </a>
+        <a href="https://www.instagram.com/bellevilledentalcare/" class="me-4 text-reset">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/company/belleville-dental-care/?originalSubdomain=ca" class="me-4 text-reset">
+          <i class="bi bi-linkedin"></i>
+        </a>
+
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4 text-center">
+              <img src="./mobile-crop-logo-removebg-preview.png" alt="" width="250rem">
+            </h6>
+            <p>
+              Belleville Dental clinic focuses on patient education to prevent disease and provide different treatment
+              options
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h3 class="text-uppercase fw-bold mb-4">
+              Useful links
+            </h3>
+            <p class="address-link">
+              <a href="./about.html" class="text-reset text-decoration-none">About us</a>
+            </p>
+            <p class="address-link">
+              <a href="contact.html" class="text-reset text-decoration-none">Contact us</a>
+            </p>
+            <p class="address-link">
+              <a href="./dentalproblems.html" class="text-reset text-decoration-none">Dental problems</a>
+            </p>
+            <p>
+              <a href="#!" class="btn btn-danger">Get appointment</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 width-timings">
+            <!-- Links -->
+            <h3 class="text-uppercase fw-bold mb-4">
+              Clinic Timings
+            </h3>
+            <p class="text-reset">Monday: 12pm to 9pm</a>
+            </p>
+            <p class="text-reset">Tuesday: 12pm to 9pm</a>
+            </p>
+            <p class="text-reset">Wednesday: 12pm to 9pm</a>
+            </p>
+            <p class="text-reset">Thursday: 12pm to 9pm</a>
+            </p>
+            <p class="text-reset">Friday: 4pm to 9pm</a>
+            </p>
+            <p class="text-reset">Saturday: 12pm to 9pm</a>
+            </p>
+            <p class="text-reset">Sunday: Off</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h3 class="text-uppercase fw-bold mb-4">Queries</h3>
+            <p class="address-link "> 
+              <a href="https://maps.app.goo.gl/D7GeryVNwbbqEcbW7" class="text-decoration-none text-reset"> <i class="fas fa-home me-3"></i>13 Shop No.7, Yousuf Arcade SC-13 Block "L" North Nazimabad Karachi, SC,
+              Karachi, Pakistan</a>
+            </p>
+            <p class="address-link">
+              <a href="mailto:bellville dental" class="text-decoration-none text-reset ">
+                <i class="fas fa-envelope me-3"></i>
+                askbelleviledental@gmail.com</a>
+            </p>
+            <p><i class="fas fa-phone me-3"></i> +92 3151095674</p>
+            <p><i class="fas fa-print me-3"></i> + 021 234 567 89</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      Copyright©2024 ownwards all rights reserved
+    
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+
+
+</body>
+
+</html>

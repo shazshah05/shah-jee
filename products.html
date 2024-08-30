@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Belleville-Dental-Care</title>
+  <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/fontawesome.min.js"></script>
+  <script src="./bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+  <script src="./jqery.js"></script>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.js"></script>
+  <style>
+    .product-banner {
+      height: 600px;
+      margin-top: 126px;
+      background-image: url(./banner2.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      align-content: center;
+    }
+    .banner-img{
+
+     
+      height: 500px;
+      display: flex;
+      justify-content: end;
+    }
+
+    
+
+    .body {
+      font-size: 1.4rem;
+     padding-left: 20px;
+      padding-top: 0px;
+      margin-top: 0%;
+    }
+
+    .treatment {
+      width: 800px;
+    }
+
+    h1 {
+      margin-top: 40px;
+      text-transform: capitalize;
+      color: #1c6889;
+    }
+
+    h2 {
+      margin-top: 20px;
+      color: #e88b21;
+    }
+
+    b {
+      font-size: 1.5rem;
+    }
+
+    li {
+      margin-bottom: 15px;
+    }
+
+    .types-container {
+      display: flex;
+      justify-content: space-between;
+
+      width: 80%;
+      margin-bottom: 20px;
+    }
+
+    .types-item1 {
+      width: 58%;
+    }
+
+    .types-item2 {
+      width: 38%;
+    }
+
+    .hygiene-intro {
+      width: 70%;
+      margin: auto;
+      margin-top: 80px;
+      margin-bottom: 50px;
+      text-align: center;
+    }
+
+    .hygiene-intro-pic {
+      margin: auto;
+      border-radius: 22px;
+      border: 2px solid black;
+    }
+
+    .hygiene-products {
+      width: 70%;
+      margin: auto;
+    }
+
+    .products-pic {
+      margin: auto;
+      width: 450px;
+      margin-bottom: 70px;
+      border-radius: 22px;
+      border: 2px solid black;
+    }
+
+    .products-pic img {
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      border-bottom: 2px solid black;
+    }
+
+    .star-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    .fa-star {
+      font-size: 33px;
+      cursor: pointer;
+
+    }
+
+    .rate-heading {
+      text-align: center;
+      font-size: 38px;
+      margin-top: 50px;
+      margin-bottom: 15px;
+    }
+
+    .booking-advertising {
+      position: fixed;
+      bottom: 70px;
+      right: 0px;
+      border-top-left-radius: 22px;
+      border-bottom-left-radius: 22px;
+      animation-name: backcolor;
+      animation-duration: 1s;
+      animation-timing-function: ease-in-out;
+      animation-direction: alternate;
+      animation-iteration-count: infinite;
+    }
+
+
+
+
+/* tooltip */
+
+    /* .player {
+    
+   
+    border: 2px groove gray;
+    background: #ccc;
+    text-align: center;
+   
+  }
+  .ui-tooltip {
+    border: 1px solid white;
+    background: #111;
+    color: white;
+  }
+  .ui-menu {
+    position: absolute;
+  }
+  .set {
+    display: inline-block;
+  }
+  .notification { 
+    padding: 15px;
+    position: absolute;
+    display: inline-block;
+    font-size: 1em;
+    padding: .5em;
+    box-shadow: 2px 2px 5px -2px rgba(0,0,0,0.5);
+    bottom: 100px;
+  } */
+
+    @keyframes backcolor {
+      from {
+        background-color: #e88b21;
+      }
+
+      to {
+        background-color: #1c6889;
+      }
+    }
+
+
+
+
+
+
+
+    @media screen and (min-width:1px) and (max-width:1000px) {
+      .body {
+        width: 100%;
+        font-size: 1.2rem;
+        margin: 0%;
+        padding: 0%;
+      }
+      .hygiene-products{
+        width: 90%;
+      }
+      .products-pic{
+        width: 92%;
+      }
+      .hygiene-intro-pic{
+        width: 92%;
+        margin-top: 150px;
+      }
+      .product-banner{
+        display: none;
+      }
+/* 
+      .types-container {
+        display: block;
+        width: 95%;
+      }
+
+      .types-item1 {
+        display: block;
+        width: 100%;
+      }
+
+      .types-item2 {
+        display: block;
+        width: 100%;
+      } */
+
+      .treatment {
+        width: 95%;
+      }
+      body{
+        width: 100%;
+        font-size: 1.2rem;
+        margin: 0%;
+        padding: 0%;
+      }
+      }
+    
+
+    @media screen and (min-width:1001px) and (max-width:1200px) {
+      /* .types-container {
+        width: 100%;
+      }
+
+      .types-item1 {
+        width: 45%;
+      }
+
+      .types-item2 {
+        width: 50%;
+      } */
+      .body{
+        width: 100%;
+        font-size: 1.2rem;
+        margin: 0%;
+        padding: 0%;
+      }
+      body{
+        width: 100%;
+        font-size: 1.2rem;
+        margin: 0%;
+        padding: 0%;
+      }
+      }
+    
+
+    @media screen and (min-width:1px) and (max-width:1300px) {
+  .banner-img{
+    display: none;
+  }
+  .treatment{
+    padding-left: 30px;
+  }
+  .body {
+        width: 100%;
+        font-size: 1.2rem;
+        margin: 0%;
+        padding: 0%;
+      }
+  body{
+    width: 100%;
+        font-size: 1.2rem;
+        margin: 0%;
+        padding: 0%;
+      }
+  }
+
+  </style>
+
+
+<!-- tooltip -->
+
+<!-- <script>
+  $( function() {
+    function notify( input ) {
+      var msg = "Selected " +
+          String.prototype.trim.call(
+            input.data( "tooltip-title" ) || input.text() );
+      $( "<div>" )
+        .appendTo( document.body )
+        .text( msg )
+        .addClass( "notification ui-state-default ui-corner-bottom" )
+        .position({
+          my: "center top",
+          at: "center top",
+          of: window
+        })
+        .show({
+          effect: "blind"
+        })
+        .delay( 1000 )
+        .hide({
+          effect: "blind",
+          duration: "slow"
+        }, function() {
+          $( this ).remove();
+        });
+    }
+ 
+    $( "button" ).each(function() {
+      var button = $( this ).button({
+        icons: {
+          primary: $( this ).data( "icon" )
+        },
+        text: !!$( this ).attr( "title" )
+      });
+      button.not( ".menu" ).on( "click", function() {
+        notify( button );
+      });
+    });
+    $( ".set" ).controlgroup({
+      items: {
+        "button" : "button"
+      }
+    });
+ 
+    $( "button.menu" )
+      .on( "click", function() {
+        $( document ).tooltip( "close", { currentTarget: this });
+        var menu = $( this ).next().show().position({
+          my: "left center",
+          at: "left bottom",
+          of: this
+        });
+        $( document ).one( "click", function() {
+          menu.hide();
+        });
+        return false;
+      })
+      .next()
+        .hide()
+        .menu({
+          selected: function( event, ui ) {
+            notify( ui.item );
+          }
+        });
+ 
+    $( document ).tooltip({
+      position: {
+        my: "center top",
+        at: "center bottom+5",
+      },
+      show: {
+        duration: "fast"
+      },
+      hide: {
+        effect: "hide"
+      }
+    });
+  } );
+  </script> -->
+
+
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="./mobile-crop-logo-removebg-preview.png" alt="" width="200px"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="padding: 0%; margin-right: 40px;"><i class="bi bi-list" style="font-size: 45px;" ></i>
+    </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class=" nav-link animate__animated animate__fadeInLeftBig" style="animation-delay: 0s;" aria-current="page" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle animate__animated animate__fadeInLeftBig" style="animation-delay: 0.2s;" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="./teethwhitening.html">Teeth whitening</a></li>
+              <li><a class="dropdown-item" href="./dental implant.html">Dental Implants</a></li>
+              <li><a class="dropdown-item" href="./dentures.html">Dentures</a></li>
+              <li><a class="dropdown-item" href="./rootcanaltreatment.html">Root Canal</a></li>
+              <li><a class="dropdown-item" href="./scaling.html">Scaling</a></li>
+
+              <li><a class="dropdown-item" href="./aligners.html">Aligners</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link active dropdown-toggle animate__animated animate__fadeInLeftBig" style="animation-delay: 0.4s;" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Dental products
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="./dentalproblems.html">Dental problems</a></li>
+              <li><a class="dropdown-item" href="./research.html">Research & advancement</a></li>
+              
+            </ul>
+          </li>
+
+
+
+         
+          <li class="nav-item">
+            <a class="nav-link animate__animated animate__fadeInLeftBig" style="animation-delay: 0.6s;" href="about.html">About us</a>
+          </li>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link animate__animated animate__fadeInLeftBig" style="animation-delay: 0.8s;" href="contact.html">Contact us</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+
+  <script>
+
+    //tooth-brush
+    $(document).ready(function () {
+      $("#str1").click(function () {
+        $(".tooth-brush-rating").css("color", "black");
+        $("#str1").css("color", "orange");
+      })
+
+    })
+
+
+    $(document).ready(function () {
+      $("#str2").click(function () {
+        $(".tooth-brush-rating").css("color", "black");
+        $("#str1,#str2").css("color", "orange");
+      })
+    })
+
+    $(document).ready(function () {
+      $("#str3").click(function () {
+        $(".tooth-brush-rating").css("color", "black");
+        $("#str1,#str2,#str3").css("color", "orange");
+      })
+    })
+    $(document).ready(function () {
+      $("#str4").click(function () {
+        $(".tooth-brush-rating").css("color", "black");
+        $("#str1,#str2,#str3,#str4").css("color", "orange");
+      })
+    })
+    $(document).ready(function () {
+      $("#str5").click(function () {
+        $(".tooth-brush-rating").css("color", "black");
+        $("#str1,#str2,#str3,#str4,#str5").css("color", "orange");
+      })
+    })
+
+
+
+
+
+    //dental-floss
+    $(document).ready(function () {
+      $("#str6").click(function () {
+        $(".dental-floss-rating").css("color", "black");
+        $("#str6").css("color", "orange");
+      })
+
+    })
+
+
+    $(document).ready(function () {
+      $("#str7").click(function () {
+        $(".dental-floss-rating").css("color", "black");
+        $("#str6,#str7").css("color", "orange");
+      })
+    })
+
+    $(document).ready(function () {
+      $("#str8").click(function () {
+        $(".dental-floss-rating").css("color", "black");
+        $("#str6,#str7,#str8").css("color", "orange");
+      })
+    })
+    $(document).ready(function () {
+      $("#str9").click(function () {
+        $(".dental-floss-rating").css("color", "black");
+        $("#str6,#str7,#str8,#str9").css("color", "orange");
+      })
+    })
+    $(document).ready(function () {
+      $("#str10").click(function () {
+        $(".dental-floss-rating").css("color", "black");
+        $("#str6,#str7,#str8,#str9,#str10").css("color", "orange");
+      })
+    })
+
+
+
+    //electric toothbrush
+    $(document).ready(function () {
+      $("#str11").click(function () {
+        $(".Electric-Toothbrushes-rating").css("color", "black");
+        $("#str11").css("color", "orange");
+      })
+
+    })
+
+    $(document).ready(function () {
+      $("#str12").click(function () {
+        $(".Electric-Toothbrushes-rating").css("color", "black");
+        $("#str11,#str12").css("color", "orange");
+      })
+    })
+
+    $(document).ready(function () {
+      $("#str13").click(function () {
+        $(".Electric-Toothbrushes-rating").css("color", "black");
+        $("#str11,#str12,#str13").css("color", "orange");
+      })
+    })
+    $(document).ready(function () {
+      $("#str14").click(function () {
+        $(".Electric-Toothbrushes-rating").css("color", "black");
+        $("#str11,#str12,#str13,#str14").css("color", "orange");
+      })
+    })
+    $(document).ready(function () {
+      $("#str15").click(function () {
+        $(".Electric-Toothbrushes-rating").css("color", "black");
+        $("#str11,#str12,#str13,#str14,#str15").css("color", "orange");
+      })
+    })
+
+
+
+
+
+    //oralirrigators
+
+    $(document).ready(function () {
+      $("#str16").click(function () {
+        $(".oralirrigator-rating").css("color", "black");
+        $("#str16").css("color", "orange");
+      })
+    })
+
+
+    $(document).ready(function () {
+      $("#str17").click(function () {
+        $(".oralirrigator-rating").css("color", "black");
+        $("#str16,#str17").css("color", "orange");
+      })
+    })
+
+    $(document).ready(function () {
+      $("#str18").click(function () {
+        $(".oralirrigator-rating").css("color", "black");
+        $("#str16,#str17,#str18").css("color", "orange");
+      })
+    })
+    $(document).ready(function () {
+      $("#str19").click(function () {
+        $(".oralirrigator-rating").css("color", "black");
+        $("#str16,#str17,#str18,#str19").css("color", "orange");
+      })
+    })
+    $(document).ready(function () {
+      $("#str20").click(function () {
+        $(".oralirrigator-rating").css("color", "black");
+        $("#str16,#str17,#str18,#str19,#str20").css("color", "orange");
+      })
+    })
+
+
+
+
+    //mouthwash-rating
+
+    $(document).ready(function () {
+      $("#str21").click(function () {
+        $(".mouthwash-rating").css("color", "black");
+        $("#str21").css("color", "orange");
+      })
+    })
+
+    $(document).ready(function () {
+      $("#str22").click(function () {
+        $(".mouthwash-rating").css("color", "black");
+        $("#str21,#str22").css("color", "orange");
+      })
+    })
+
+    $(document).ready(function () {
+      $("#str23").click(function () {
+        $(".mouthwash-rating").css("color", "black");
+        $("#str21,#str22,#str23").css("color", "orange");
+      })
+    })
+    $(document).ready(function () {
+      $("#str24").click(function () {
+        $(".mouthwash-rating").css("color", "black");
+        $("#str21,#str22,#str23,#str24").css("color", "orange");
+      })
+    })
+    $(document).ready(function () {
+      $("#str25").click(function () {
+        $(".mouthwash-rating").css("color", "black");
+        $("#str21,#str22,#str23,#str24,#str25").css("color", "orange");
+      })
+    })
+
+
+    //tongue-scraping-rating
+    $(document).ready(function () {
+      $("#str26").click(function () {
+        $(".tongue-scraping-rating").css("color", "black");
+        $("#str26").css("color", "orange");
+      })
+    })
+
+    $(document).ready(function () {
+      $("#str27").click(function () {
+        $(".tongue-scraping-rating").css("color", "black");
+        $("#str26,#str27").css("color", "orange");
+      })
+    })
+
+    $(document).ready(function () {
+      $("#str28").click(function () {
+        $(".tongue-scraping-rating").css("color", "black");
+        $("#str26,#str27,#str28").css("color", "orange");
+      })
+    })
+    $(document).ready(function () {
+      $("#str29").click(function () {
+        $(".tongue-scraping-rating").css("color", "black");
+        $("#str26,#str27,#str28,#str29").css("color", "orange");
+      })
+    })
+    $(document).ready(function () {
+      $("#str30").click(function () {
+        $(".tongue-scraping-rating").css("color", "black");
+        $("#str26,#str27,#str28,#str29,#str30").css("color", "orange");
+      })
+    })
+
+
+    //teeth-whitening-products-rating
+
+    $(document).ready(function () {
+      $("#str31").click(function () {
+        $(".teeth-whitening-products-rating").css("color", "black");
+        $("#str31").css("color", "orange");
+      })
+    })
+
+    $(document).ready(function () {
+      $("#str32").click(function () {
+        $(".teeth-whitening-products-rating").css("color", "black");
+        $("#str31,#str32").css("color", "orange");
+      })
+    })
+
+    $(document).ready(function () {
+      $("#str33").click(function () {
+        $(".teeth-whitening-products-rating").css("color", "black");
+        $("#str31,#str32,#str33").css("color", "orange");
+      })
+    })
+    $(document).ready(function () {
+      $("#str34").click(function () {
+        $(".teeth-whitening-products-rating").css("color", "black");
+        $("#str31,#str32,#str33,#str34").css("color", "orange");
+      })
+    })
+    $(document).ready(function () {
+      $("#str35").click(function () {
+        $(".teeth-whitening-products-rating").css("color", "black");
+        $("#str31,#str32,#str33,#str34,#str35").css("color", "orange");
+      })
+    })
+
+
+  </script>
+
+
+
+
+
+
+  <a href="./contact.html" class="btn btn-danger booking-advertising">Book an appointment</a>
+
+  <div class="product-banner animate__animated animate__fadeIn" style="animation-duration: 2.5s;">
+   <div class="banner-img"> <img class="animate__animated animate__fadeInRight" src="./products-banner final.png" alt="" height="100%"></div>
+  </div>
+
+  <div class="body">
+
+    <div class="hygiene-intro">
+      <img class="hygiene-intro-pic" src="./hygiene-intro.jpg" alt="" width="500px">
+      <p>Maintaining good oral hygiene is not just about having a bright smile; it's a crucial aspect of your overall
+        health. Poor oral care can lead to a host of problems, from cavities and gum disease to more serious conditions
+        like heart disease and diabetes. </p>
+      <p>In this guide, we'll explore the very best oral hygiene products, helping you navigate through the countless
+        options out there. Whether you're looking for the best toothbrush, mouthwash, or dental floss, we've got you
+        covered! </p>
+
+    </div>
+    <div class="treatment">
+      <h2>Understanding Oral Hygiene</h2>
+      <p>Your mouth is a gateway to the rest of your body, and maintaining its cleanliness can prevent a multitude of
+        other health issues. Good oral hygiene practices help remove plaque, a sticky film of bacteria that forms on
+        your teeth. If not removed, plaque will lead to tooth decay and gum disease, which are not only painful but also
+        have far-reaching effects on your health. </p>
+
+      <h1>Types of Oral Hygiene Products</h1>
+      <p>When it comes to maintaining oral health, the right tools make all the difference! Here's a closer look at some
+        of the best oral hygiene products available.</p>
+
+    </div>
+
+
+
+    <!-- <div class="player">Here Be Video (HTML5?)</div>
+<div class="tools">
+  <span class="set">
+    <button data-icon="ui-icon-circle-arrow-n" title="I like this">Like</button>
+    <button data-icon="ui-icon-circle-arrow-s">I dislike this</button>
+  </span>
+  <div class="set">
+    <button data-icon="ui-icon-circle-plus" title="Add to Watch Later">Add to</button>
+    <button class="menu" data-icon="ui-icon-triangle-1-s">Add to favorites or playlist</button>
+    <ul>
+      <li><div>Favorites</div></li>
+      <li><div>Funnees</div></li>
+      <li></li>
+      <li><div>New playlist...</div></li>
+    </ul>
+  </div>
+  <button title="Share this video">Share</button>
+  <button data-icon="ui-icon-alert">Flag as inappropriate</button>
+</div> -->
+
+    <ol>
+      <div class="hygiene-products">
+
+        <div>
+          <li>
+            <h2>Tooth Brush</h2>
+          </li>
+        </div>
+
+
+        <p>Selecting a suitable toothbrush for your teeth may be daunting, especially when the market is flooded with
+          manufacturers touting the best product. Before choosing a toothbrush, you must be aware that there are three
+          bristle varieties available:</p>
+        <ul>
+          <li> Hard-bristle</li>
+          <li> Soft-bristle</li>
+        </ul>
+
+        <p>Most dentists recommend using brushes with soft bristles as stiff or medium bristled brushes can damage your
+          gums. The most important thing to remember while brushing is to brush in gentle circular strokes rather than
+          severe sawing motions. So, if you have weak hand coordination, an electric toothbrush may be the best
+          alternative for you.</p>
+
+        <h3 class="rate-heading">Rate this product</h3>
+
+        <div class="products-pic">
+          <img src="./toothbrush.png" width="100%">
+          <div class="star-container">
+            <i class="fa fa-star tooth-brush-rating" aria-hidden="true" id="str1"></i>
+            <i class="fa fa-star tooth-brush-rating" aria-hidden="true" id="str2"></i>
+            <i class="fa fa-star tooth-brush-rating" aria-hidden="true" id="str3"></i>
+            <i class="fa fa-star tooth-brush-rating" aria-hidden="true" id="str4"></i>
+            <i class="fa fa-star tooth-brush-rating" aria-hidden="true" id="str5"></i>
+          </div>
+        </div>
+      </div>
+      <div class="hygiene-products">
+        <li>
+          <h2>Dental Floss</h2>
+        </li>
+        <p>A toothbrush cannot remove the tiny food particles that stick to your teeth—here is when dental floss comes
+          in
+          handy. Flossing is extremely crucial and underrated. Dentists suggest using floss twice a day to reduce the
+          risk
+          of tooth decay and gum diseases. There are two varieties of dental floss available on the market:</p>
+        <ul>
+          <li> Waxed</li>
+          <li> Un-waxed</li>
+        </ul>
+
+        <p>People who have tightly spaced teeth should consider using waxed floss. Most professionals recommend
+          ADA-approved brands like Coco Floss, DenTek, etc.</p>
+        <h3 class="rate-heading">Rate this product</h3>
+
+        <div class="products-pic">
+          <img src="./dentalfloss.jpg" width="100%">
+          <div class="star-container">
+            <i class="fa fa-star dental-floss-rating" aria-hidden="true" id="str6"></i>
+            <i class="fa fa-star dental-floss-rating" aria-hidden="true" id="str7"></i>
+            <i class="fa fa-star dental-floss-rating" aria-hidden="true" id="str8"></i>
+            <i class="fa fa-star dental-floss-rating" aria-hidden="true" id="str9"></i>
+            <i class="fa fa-star dental-floss-rating" aria-hidden="true" id="str10"></i>
+          </div>
+        </div>
+      </div>
+      <div class="hygiene-products">
+        <li>
+          <h2>Electric Toothbrushes</h2>
+        </li>
+        <p>Electric toothbrushes offer advanced cleaning capabilities. When compared to other products for oral hygiene,
+          oscillating-rotating toothbrushes have small, round heads that rotate in one direction and then the other,
+          effectively removing plaque. Sonic toothbrushes vibrate at high speeds, creating a dynamic fluid action that
+          helps clean between teeth and along the gumline.</p>
+
+        <p>When choosing an electric toothbrush, consider features like built-in timers to ensure you brush for the
+          recommended two minutes, pressure sensors to prevent brushing too hard, and multiple brushing modes for a
+          customized routine.</p>
+        <h3 class="rate-heading">Rate this product</h3>
+
+        <div class="products-pic">
+          <img src="./electrical toothbrush.jfif-3.jfif" width="100%">
+          <div class="star-container">
+            <i class="fa fa-star Electric-Toothbrushes-rating" aria-hidden="true" id="str11"></i>
+            <i class="fa fa-star Electric-Toothbrushes-rating" aria-hidden="true" id="str12"></i>
+            <i class="fa fa-star Electric-Toothbrushes-rating" aria-hidden="true" id="str13"></i>
+            <i class="fa fa-star Electric-Toothbrushes-rating" aria-hidden="true" id="str14"></i>
+            <i class="fa fa-star Electric-Toothbrushes-rating" aria-hidden="true" id="str15"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="hygiene-products">
+        <li>
+          <h2>Oral Irrigators</h2>
+        </li>
+        <p>An oral irrigator shoots a continuous stream of water into your mouth to remove food particles and bacteria
+          from places not easily accessible by toothbrushes. The device is best for teens with braces or adults with
+          partial dentures. Listed below are some reasons why our dentists prescribe oral irrigators:</p>
+        <ul>
+          <li>It reduces the bacteria.</li>
+          <li>It removes 99% of plaque.</li>
+        </ul>
+        <br>
+        <p>When choosing an oral irrigator, you must ensure that it has a system of water pressure regulation.
+          Most dentists prefer to recommend ADA-certified brands like Waterpik Aquarius Water Flosser, the finest among
+          the flossers available in the market.</p>
+        <h3 class="rate-heading">Rate this product</h3>
+        <div class="products-pic">
+          <img src="./oralirrigator.jpg" width="100%">
+          <div class="star-container">
+            <i class="fa fa-star oralirrigator-rating" aria-hidden="true" id="str16"></i>
+            <i class="fa fa-star oralirrigator-rating" aria-hidden="true" id="str17"></i>
+            <i class="fa fa-star oralirrigator-rating" aria-hidden="true" id="str18"></i>
+            <i class="fa fa-star oralirrigator-rating" aria-hidden="true" id="str19"></i>
+            <i class="fa fa-star oralirrigator-rating" aria-hidden="true" id="str20"></i>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="hygiene-products">
+        <li>
+          <h2>Mouth Wash</h2>
+        </li>
+        <p>A good mouthwash can reach places that brushing and flossing might miss, providing an extra layer of
+          protection
+          against bacteria. Recommended choices include:</p>
+        <ul>
+          <li> A multipurpose mouthwash that reduces plaque, maintains healthy gums, and strengthens teeth.</li>
+          <li>Alcohol-free and designed to help protect against cavities, gingivitis, and bad breath.</li>
+        </ul>
+
+        <p>When choosing an oral irrigator, you must ensure that it has a system of water pressure regulation.
+          Most dentists prefer to recommend ADA-certified brands like Waterpik Aquarius Water Flosser, the finest among
+          the flossers available in the market.</p>
+        <h3 class="rate-heading">Rate this product</h3>
+
+        <div class="products-pic">
+          <img src="./mouthwash.avif" width="100%">
+          <div class="star-container">
+            <i class="fa fa-star mouthwash-rating" aria-hidden="true" id="str21"></i>
+            <i class="fa fa-star mouthwash-rating" aria-hidden="true" id="str22"></i>
+            <i class="fa fa-star mouthwash-rating" aria-hidden="true" id="str23"></i>
+            <i class="fa fa-star mouthwash-rating" aria-hidden="true" id="str24"></i>
+            <i class="fa fa-star mouthwash-rating" aria-hidden="true" id="str25"></i>
+          </div>
+        </div>
+      </div>
+      <div class="hygiene-products">
+        <li>
+          <h2>Tongue scrappers</h2>
+        </li>
+        <p>A tongue scraper cleans the tongue and removes all the bacteria. Without a proper tongue cleaner, you may
+          have to deal with bad breath. Therefore, a tongue scraper is an essential tool to add to your daily dental
+          regime. Dr. Tungs's Tongue Cleaner is one of the most popular and in-demand tongue scrapers that have shown
+          remarkable results..</p>
+        <h3 class="rate-heading">Rate this product</h3>
+
+        <div class="products-pic">
+          <img src="./tongue-scraping.avif" width="100%">
+          <div class="star-container">
+            <i class="fa fa-star tongue-scraping-rating" aria-hidden="true" id="str26"></i>
+            <i class="fa fa-star tongue-scraping-rating" aria-hidden="true" id="str27"></i>
+            <i class="fa fa-star tongue-scraping-rating" aria-hidden="true" id="str28"></i>
+            <i class="fa fa-star tongue-scraping-rating" aria-hidden="true" id="str29"></i>
+            <i class="fa fa-star tongue-scraping-rating" aria-hidden="true" id="str30"></i>
+          </div>
+        </div>
+      </div>
+      <div class="hygiene-products">
+        <li>
+          <h2>Teeth Whitening Products</h2>
+        </li>
+        <p>Teeth whitening products offer varying methods to achieve a brighter smile. Whitening strips are thin,
+          flexible strips coated with a peroxide-based whitening gel that adhere to your teeth and are worn for a
+          specified period. Whitening gels and trays involve applying a peroxide-based gel to your teeth using custom or
+          pre-formed trays, often providing more potent results than whitening strips alone. </p>
+        <h3 class="rate-heading">Rate this product</h3>
+
+        <div class="products-pic">
+          <img src="./teeth-whitening-products.jpg" width="100%">
+          <div class="star-container">
+            <i class="fa fa-star teeth-whitening-products-rating" aria-hidden="true" id="str31"></i>
+            <i class="fa fa-star teeth-whitening-products-rating" aria-hidden="true" id="str32"></i>
+            <i class="fa fa-star teeth-whitening-products-rating" aria-hidden="true" id="str33"></i>
+            <i class="fa fa-star teeth-whitening-products-rating" aria-hidden="true" id="str34"></i>
+            <i class="fa fa-star teeth-whitening-products-rating" aria-hidden="true" id="str35"></i>
+          </div>
+        </div>
+      </div>
+
+
+    </ol>
+
+
+    <div class="treatment">
+      <h1>How to Choose the Best Oral Hygiene Products</h1>
+      <p>Finding the best oral hygiene products might seem overwhelming given the seemingly infinite options. Here's the
+        good news: by focusing on specific features, you can make informed choices that cater to your unique dental
+        needs. Keep these tips in mind the next time you go shopping!</p>
+      <h2>Your Dental Needs and Goals</h2>
+      <p>Your dental needs should be the primary consideration when selecting oral hygiene products. For instance, if
+        you are prone to cavities, look for fluoride toothpaste and mouthwash with the American Dental Association (ADA)
+        Seal of Acceptance - such as Colgate Total or Crest Pro-Health.</p>
+      <p>If you aim to whiten your teeth, products like Crest 3D White Strips or Opalescence Go Whitening Trays are
+        effective options. For those with braces or dental implants, water flossers like the Waterpik are highly
+        recommended for their ability to clean hard-to-reach areas.</p>
+      <h2>Sensitivity and Allergies</h2>
+      <p>If you have sensitive teeth or gums, it's crucial to choose products designed to minimize discomfort.
+        Toothpaste for sensitive teeth contains ingredients like potassium nitrate or stannous fluoride to help reduce
+        sensitivity. Sensodyne Proamel or Colgate Sensitive are good options here. </p>
+      <p>For those with allergies (especially to certain chemicals or flavors) natural or hypoallergenic products like
+        Tom's of Maine Fluoride-Free Toothpaste or Hello Sensitivity Relief Fluoride Toothpaste can be beneficial.
+        Always remember to check the ingredient list to avoid potential allergens!</p>
+      <h2>Ease of Use and Comfort</h2>
+      <p>Philips Sonicare ProtectiveClean or Oral-B Pro 1000 offers features like built-in timers and pressure sensors
+        to enhance your brushing experience. </p>
+      <p>Floss picks and water flossers might be more comfortable alternatives to traditional floss, especially for
+        those with dexterity issues. Interdental brushes with flexible handles, like the GUM Proxabrush Go-Betweens, can
+        also make cleaning between teeth easier and more effective.</p>
+
+      <h2>Price and Availability</h2>
+      <p>While it's important to invest in the best oral hygiene products, they should also fit within your budget. Many
+        effective products are available at various price points. For instance, manual toothbrushes like the Oral-B
+        Pro-Health Clinical Pro-Flex offer excellent performance at an affordable price. </p>
+      <p>Store brands often provide comparable quality to name brands at a lower cost, as well. Additionally, consider
+        the availability of products; those that are easily accessible at local stores or online retailers ensure you
+        can maintain your routine without interruption.</p>
+
+
+      <h2>Environmental Impact and Sustainability</h2>
+      <p>For environmentally conscious consumers, the sustainability of oral hygiene products is a significant factor.
+        Look for toothbrushes made from biodegradable materials, such as bamboo toothbrushes from brands like Brush with
+        Bamboo or The Humble Co. </p>
+      <p>Toothpaste tablets, like those from Bite or Denttabs, reduce plastic waste associated with traditional
+        toothpaste tubes. Refillable floss containers also minimize environmental impact. Always check for products with
+        eco-friendly packaging and certifications, such as the Environmental Working Group (EWG) Verified mark. </p>
+
+    </div>
+    <h1 style="width: 80%; margin: auto; text-align: center;">Building Your Oral Hygiene Routine with <br><span
+        style="color: #e88b21;">Belleville dental</span></h1>
+    <div style="margin: auto;width: fit-content; margin-top: 30px;">
+      <a href="./contact.html" class="btn btn-danger">Book an appointment</a>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- Footer -->
+  <footer class="text-center text-lg-start mt-5 ">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block ">
+        <span class="fs-4 ">Get connected with us on social networks:</span>
+      </div>
+      <!-- Left -->
+
+      <!-- Right -->
+      <div>
+        <a href="https://www.facebook.com/people/Belleville-Dental-Care/100063752242326/" class="me-4 text-reset">
+          <i class="bi bi-facebook"></i>
+        </a>
+        <a href="https://twitter.com/blvldentalcare" class="me-4 text-reset">
+          <i class="bi bi-twitter"></i>
+        </a>
+        <a href="https://youtube.com/@bellevilledental6238?si=HCi8TJewUEh0ATSs" class="me-4 text-reset">
+          <i class="bi bi-youtube"></i>
+        </a>
+        <a href="https://www.instagram.com/bellevilledentalcare/" class="me-4 text-reset">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/company/belleville-dental-care/?originalSubdomain=ca" class="me-4 text-reset">
+          <i class="bi bi-linkedin"></i>
+        </a>
+
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4 text-center">
+              <img src="./mobile-crop-logo-removebg-preview.png" alt="" width="250rem">
+            </h6>
+            <p>
+              Belleville Dental clinic focuses on patient education to prevent disease and provide different treatment
+              options
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h3 class="text-uppercase fw-bold mb-4">
+              Useful links
+            </h3>
+            <p class="address-link">
+              <a href="./about.html" class="text-reset text-decoration-none">About us</a>
+            </p>
+            <p class="address-link">
+              <a href="contact.html" class="text-reset text-decoration-none">Contact us</a>
+            </p>
+            <p class="address-link">
+              <a href="./dentalproblems.html" class="text-reset text-decoration-none">Dental problems</a>
+            </p>
+            <p>
+              <a href="#!" class="btn btn-danger">Get appointment</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 width-timings">
+            <!-- Links -->
+            <h3 class="text-uppercase fw-bold mb-4">
+              Clinic Timings
+            </h3>
+            <p class="text-reset">Monday: 12pm to 9pm</a>
+            </p>
+            <p class="text-reset">Tuesday: 12pm to 9pm</a>
+            </p>
+            <p class="text-reset">Wednesday: 12pm to 9pm</a>
+            </p>
+            <p class="text-reset">Thursday: 12pm to 9pm</a>
+            </p>
+            <p class="text-reset">Friday: 4pm to 9pm</a>
+            </p>
+            <p class="text-reset">Saturday: 12pm to 9pm</a>
+            </p>
+            <p class="text-reset">Sunday: Off</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h3 class="text-uppercase fw-bold mb-4">Queries</h3>
+            <p class="address-link ">
+              <a href="https://maps.app.goo.gl/D7GeryVNwbbqEcbW7" class="text-decoration-none text-reset"> <i
+                  class="fas fa-home me-3"></i>13 Shop No.7, Yousuf Arcade SC-13 Block "L" North Nazimabad Karachi, SC,
+                Karachi, Pakistan</a>
+            </p>
+            <p class="address-link">
+              <a href="mailto:bellville dental" class="text-decoration-none text-reset ">
+                <i class="fas fa-envelope me-3"></i>
+                askbelleviledental@gmail.com</a>
+            </p>
+            <p><i class="fas fa-phone me-3"></i> +92 3151095674</p>
+            <p><i class="fas fa-print me-3"></i> + 021 234 567 89</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      Copyright©2024 ownwards all rights reserved
+
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+
+</body>
+
+</html>
